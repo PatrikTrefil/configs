@@ -1,0 +1,10 @@
+set searchengine duckduckgo
+colors dark
+unbindurl duckduckgo j
+unbindurl duckduckgo k
+unbindurl duckduckgo /
+unbindurl youtube t
+unbindurl youtube k
+unbindurl youtube /
+unbindurl youtube f
+blacklistadd mail.google

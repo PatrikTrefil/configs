@@ -1,0 +1,63 @@
+  System Operations
+super + l
+  setxkbmap us && pkill -RTMIN+1 dwmblocks && $LOCK
+alt + shift + i
+  xrandr --output "eDP1" --primary --auto --output "DP1" --off --output "DP3" --off
+super + shift + r
+  ~/.scripts/reboot.sh
+super + shift + x
+  ~/.scripts/shutdown.sh
+super + shift + s
+  sh ~/.scripts/dmenu-sleep
+super + k ; {c,u,d}
+  setxkbmap {cz qwerty, us, de} && pkill -RTMIN+1 dwmblocks
+
+# Other
+Print
+  scrot ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png
+alt + Print
+	scrot -s ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png
+super + p
+  bitwarden-dmenu --clear-clipboard 30 --session-timeout 1000 --sync-vault-after 3600 --on-error 'xargs notify-send --urgency=low'
+super + e
+  ~/.scripts/dmenu-emoji/dmenu-emoji.sh
+super + c 
+  ~/.scripts/dmenu-khard-contacts/scont
+super + m
+	dunstctl set-paused toggle && pkill -RTMIN+5 dwmblocks
+super + g
+	bw generate --number --uppercase --lowercase --special | xclip -selection clipboard
+super + v
+	~/.scripts/vpn && pkill -RTMIN+3 dwmblocks
+super + t
+  ~/.scripts/safeeyes-toggle && pkill -RTMIN+4 dwmblocks
+super + alt + t
+  safeeyes -t
+super + s; {a, t, n, b}
+  {search-window pulsemixer, safeeyes --settings, nm-connection-editor, blueman-manager}
+super + a
+  search-window "ncmpcpp -s browser"
+
+#Launch apps
+super + o
+  search-window "$HOME/.scripts/search-open"
+super + n
+  search-window "$HOME/.scripts/search-edit --gnvim"
+super + h
+  search-window "$HOME/.scripts/search-edit --gui"
+super + Return
+  $TERMINAL
+alt + p
+  dmenu_run 
+  
+# Audio
+XF86Audio{LowerVolume,RaiseVolume}
+  amixer -q set Master 10%{-,+} unmute && pkill -RTMIN+2 dwmblocks 
+#	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ {-10%,+10%} && refbar
+XF86AudioPlay
+  playerctl play-pause 
+XF86AudioMute
+  amixer -q set Master toggle && pkill -RTMIN+2 dwmblocks
+#  pactl set-sink-mute @DEFAULT_SINK@ toggle && refbar
+ctrl + XF86Audio{LowerVolume,RaiseVolume}
+  playerctl {previous,next}

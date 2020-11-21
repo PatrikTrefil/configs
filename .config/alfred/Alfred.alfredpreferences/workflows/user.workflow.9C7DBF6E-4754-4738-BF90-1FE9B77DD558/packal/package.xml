@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>ipify</name>
+  <version>1.0</version>
+  <bundle>com.github.verhage.ipify</bundle>
+  <updated>1565006031</updated>
+  <file>ipify.alfredworkflow</file>
+</workflow>

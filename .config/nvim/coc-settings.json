@@ -1,0 +1,12 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "yaml",
+    "json",
+    "toml",
+    "xml"
+  ],
+  "suggest.autoTrigger": "none",
+  "suggest.noselect": false
+}

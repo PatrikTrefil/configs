@@ -1,0 +1,22 @@
+{
+  "database location dialog": "/home/patriktrefil/Mega/Books/Calibre", 
+  "notified-version-updates": {
+    "__class__": "set", 
+    "__value__": [
+      "4.19", 
+      "5.0"
+    ]
+  }, 
+  "sort_history": [
+    [
+      "timestamp", 
+      true
+    ], 
+    [
+      "timestamp", 
+      false
+    ]
+  ], 
+  "welcome_wizard_device": "kindle_pw", 
+  "welcome_wizard_was_run": true
+}

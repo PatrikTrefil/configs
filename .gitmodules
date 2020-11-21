@@ -1,0 +1,3 @@
+[submodule ".themes/Dracula"]
+	path = .themes/Dracula
+	url = git@github.com:dracula/gtk.git

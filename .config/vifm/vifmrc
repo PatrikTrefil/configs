@@ -1,0 +1,33 @@
+colorscheme iceberg
+
+nnoremap s :shell<cr>
+nnoremap S :sort<cr>
+nnoremap w :view<cr>
+
+map gH :cd ~<cr>
+
+set incsearch
+
+set undolevels=100
+set history=100
+set number relativenumber
+set nu rnu
+set statusline="  %A %10u:%-7g %T %= %15s %20d  "
+set timefmt=%d/%m/%y\ %H:%M
+set wildmenu "Visual menu when cycling through auto-complete with TAB
+
+" ignore case in search patterns unless it contains at least one uppercase letter"
+set ignorecase
+set smartcase
+
+filetype *.img,*.jpg,*.jpeg,*.png,*.bmp open
+filetype *.pdf open
+filetype *.dmg,*.pkg open
+filetype *.wav,*.mp3,*.ac3 open
+filetype *.mkv,*.mp4,*.avi,*.mpg,*.mpeg open
+filetype *.doc,*.docx,*.xlsx,*.xls,*.odt,*.odp,*.pptx open
+filetype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx,*.ppt open -a LibreOffice.app
+filetype *.html,*.htm open
+filetype *.zip unzip %f
+
+command! zip zip -r %f.zip %f

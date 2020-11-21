@@ -1,0 +1,15 @@
+set font "monospace normal 11"
+set sandbox none
+set statusbar-h-padding 5
+set statusbar-v-padding 5
+set page-padding 1
+set selection-clipboard clipboard
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map r rotate
+map J zoom in
+map K zoom out
+map i recolor
+map p print
