@@ -1,0 +1,133 @@
+
+{
+    // General
+    "editor.fontSize": 18,
+    "debug.console.fontSize": 20,
+    "markdown.preview.fontSize": 18,
+    "terminal.integrated.fontSize": 17,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 2.5,
+    "window.menuBarVisibility": "toggle",
+    "editor.lineNumbers": "relative",
+    // Python
+    "python.showStartPage": false,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true,
+    // Go
+    "go.useLanguageServer": true,
+    // Latex
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.viewer.command": "zathura",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "--synctex-editor-command",
+        "code --reuse-window -g \"%{input}:%{line}\"",
+        "%PDF%"
+    ],
+    "latex-workshop.view.pdf.external.synctex.command": "zathura",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "--synctex-forward=%LINE%:0:%TEX%",
+        "%PDF%"
+    ],
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    // Vim
+    "vim.handleKeys": {"<C-d>": false,"<C-c>": false,"<C-v>": false,"<C-x>": false,"<C-a>": false, "<C-w>": false},
+    "keyboard.dispatch": "keyCode"    ,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "vim.hlsearch": true,
+    "vim.leader": ",",
+    "editor.mouseWheelZoom": true,
+    "editor.renderControlCharacters": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
+        },
+        {
+            "before": [
+                "U"
+            ],
+            "commands": [
+                "redo"
+            ]
+        },
+        {
+            "before": [
+                "X", "X"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardCopyAction"
+                },
+                {
+                    "command": "editor.action.deleteLines"
+                }
+            ],
+            "when":"textInputFocus && !editorReadonly"
+        },
+        {
+            "before": [
+                "\"", "+", "p"
+            ],
+            "after": [
+                "p"
+            ]
+        },
+        {
+            "before": [ "d" ],
+            "after": [ "\"", "_", "d" ]
+        },
+        {
+            "before": [ "D" ],
+            "after": [ "\"", "_", "D" ]
+        },
+        {
+            "before": [ "d", "d" ],
+            "after": [ "\"", "_", "d", "d" ]
+        },
+        {
+            "before": [ "c" ],
+            "after": [ "\"", "_", "c" ]
+        },
+        {
+            "before": [ "C" ],
+            "after": [ "\"", "_", "C" ]
+        },
+        {
+            "before": [ "c", "c" ],
+            "after": [ "\"", "_", "c", "c" ]
+        }
+
+    ],
+    "vim.visualModeKeyBindingsNonRecursive":[
+        {
+            "before": [
+                "X"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardCopyAction"
+                },
+                {
+                    "command": "deleteRight"
+                }
+            ],
+            "when":"textInputFocus"
+        },
+        {
+            "before": [ "d" ],
+            "after": [ "\"", "_", "d" ]
+        },
+        {
+            "before": [ "c" ],
+            "after": [ "\"", "_", "c" ]
+        }
+    ]
+}
