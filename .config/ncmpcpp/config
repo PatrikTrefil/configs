@@ -30,7 +30,7 @@ mpd_port = 6600
 #
 ## Needed for tag editor and file operations to work.
 ##
-mpd_music_dir = ~/Mega/Music
+mpd_music_dir = ~/Mega/Media/Music
 #
 mpd_crossfade_time = 5
 #
@@ -542,9 +542,9 @@ execute_on_song_change = notify-send -t 5000 "Now Playing" "$(mpc --format '%tit
 #
 #active_window_border = red
 #
-visualizer_fifo_path = "/tmp/mpd.fifo"
-visualizer_output_name = "my_fifo"
-visualizer_sync_interval = "30" 
-visualizer_in_stereo = "yes"
-visualizer_type = "spectrum"
-visualizer_look = "+|"
+#visualizer_fifo_path = "/tmp/mpd.fifo"
+#visualizer_output_name = "my_fifo"
+#visualizer_sync_interval = "30" 
+#visualizer_in_stereo = "yes"
+#visualizer_type = "spectrum"
+#visualizer_look = "+|"
