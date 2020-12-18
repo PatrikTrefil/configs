@@ -80,21 +80,25 @@ set ignorecase " search is case-insensitive, unless there is at least one CAPITA
 set smartcase " search is case-insensitive, unless there is at least one CAPITAL letter
 set clipboard=unnamedplus " use system clipboard
 set mouse=a " enable mouse everywhere
-set encoding=UTF-8
+set encoding=UTF-8 " encoding used internaly
 set guifont=Consolas:h18 " font for gnvim
 set termguicolors " Ignore terminal colorscheme
+set list " show whitespace chars defined in listchars
+set listchars=tab:>·,trail:~,extends:>,precedes:< " eol:¬, = disables cursor in gnvim
+set updatetime=100 " write to disk after X miliseconds to save state for crashes
 
 " Tabs " {{{
-set expandtab " tab to a multiple of tabstop (and enables uses of spaces)
-set tabstop=2 " width of TAB character
-set shiftwidth=2 " determines how much a line is moved when using >>,<<,==
-set updatetime=100 " write to disk after X miliseconds to save state for crashes
+" http://vimcasts.org/episodes/tabs-and-spaces/ "
+set expandtab " tab to a multiple of tabstop and enables uses of spaces
+set tabstop=2 " width of TAB character => when we insert new tabs, they become spaces, which is dictated by expandtab (if there are already any tabs, in the file, this is their displayed width)
+set softtabstop=2 " when using Tab/Backspace add/delete whole tabs not a single space
+set shiftwidth=2 " determines how much a line is moved when using >>,<<,== (should be the same as tabstop)
 set hidden " ability to jump to new buffer without saving
 "}}}
 autocmd BufWritePost *sxhkdrc !killall "sxhkd" && setsid sxhkd 
 " Update binds when sxhkdrc is updated.
 autocmd BufWritePost *.py Format " Auto-format python files
-" Line numbers{{{
+" Lin" numbers{{{
 set number relativenumber
 set nu rnu
 "}}}
@@ -159,6 +163,11 @@ augroup rainbow_lisp
   autocmd!
   autocmd FileType python,html RainbowParentheses
 augroup END
+" Indent Guides {{{ "
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#30303a   ctermbg=13
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#30303a ctermbg=4
+"}}}
 " Todo.txt "{{{
 " Use todo#complete as the omni complete function for todo files
 au filetype todo setlocal omnifunc=todo#Complete
@@ -182,14 +191,36 @@ imap <c-x><c-f> <plug>(fzf-complete-path)
 " }}}
 " VimWiki "{{{
 let g:vimwiki_folding = 'custom' " Load from ftplugin
-let g:vimwiki_auto_header = 1
-let g:vimwiki_global_ext = 0
-let g:vimwiki_ext2syntax = {}
+let g:vimwiki_auto_header = 1 " create heading in new file
+let g:vimwiki_global_ext = 0 " (don't) create temp wikis
+"let g:vimwiki_ext2syntax = {}
 " Maxhi gives different colors to links that lead nowhere
-let g:vimwiki_list = [{'path': '~/Mega/Documents/Other/vimwiki/',
-                       \'path_html': "~/Mega/Documents/Other/vimwiki_html",
-                       \'syntax': 'default', 'ext': '.wiki', 'maxhi': 1,
-                       \'auto_export': 1, 'auto_diary_index': 1, 'auto_tags': 1}]
+"let g:vimwiki_list = [{'path': '~/Mega/Documents/Other/vimwiki/',
+                       "\'path_html': '~/Mega/Documents/Other/vimwiki_html',
+                       "\'syntax': 'default', 'ext': '.wiki', 'maxhi': 1,
+                       "\'auto_export': 1, 'auto_diary_index': 1, 'auto_tags': 1}]
+
+  let wiki_1 = {}
+  let wiki_1.path = '~/Mega/Documents/Other/vimwiki/'
+  let wiki_1.path_html = '~/Mega/Documents/Other/vimwiki_html/'
+  let wiki_1.syntax = 'default'
+  let wiki_1.ext = ".wiki"
+  let wiki_1.maxhi = 1 " highlight links leading to empty pages
+  let wiki_1.auto_export = 1
+  let wiki_1.auto_diary_index = 1
+  let wiki_1.auto_tags = 1
+
+  let wiki_2 = {}
+  let wiki_2.path = '~/Mega/Documents/Other/quicknotes/'
+  let wiki_2.path_html = '~/Mega/Documents/Other/quicknotes_html/'
+  let wiki_2.syntax = 'default'
+  let wiki_2.ext = ".wiki"
+  let wiki_2.maxhi = 1 " highlight links leading to empty pages
+  let wiki_2.auto_export = 1
+  let wiki_2.auto_diary_index = 1
+  let wiki_2.auto_tags = 1
+
+  let g:vimwiki_list = [wiki_1, wiki_2]
 " Colors for Headings and Links
 hi VimwikiHeader1 guifg=#FFB86C cterm=bold gui=bold
 hi VimwikiHeader2 guifg=#BD93F9 cterm=bold gui=bold
@@ -537,9 +568,3 @@ func! StartMDPreview()
   call PreviewMD()
 endfu
 " }}}
-"
-set list
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#30303a   ctermbg=13
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#30303a ctermbg=4
