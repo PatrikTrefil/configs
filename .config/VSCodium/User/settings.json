@@ -7,7 +7,7 @@
     "terminal.integrated.fontSize": 17,
     "diffEditor.ignoreTrimWhitespace": false,
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 2.5,
+    "window.zoomLevel": 1,
     "window.menuBarVisibility": "toggle",
     "editor.lineNumbers": "relative",
     // Python
@@ -31,7 +31,7 @@
         "--synctex-forward=%LINE%:0:%TEX%",
         "%PDF%"
     ],
-    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.synctex.afterBuild.enabled": false,
     // Vim
     "vim.handleKeys": {"<C-d>": false,"<C-c>": false,"<C-v>": false,"<C-x>": false,"<C-a>": false, "<C-w>": false},
     "keyboard.dispatch": "keyCode"    ,
@@ -57,20 +57,6 @@
             "commands": [
                 "redo"
             ]
-        },
-        {
-            "before": [
-                "X", "X"
-            ],
-            "commands": [
-                {
-                    "command": "editor.action.clipboardCopyAction"
-                },
-                {
-                    "command": "editor.action.deleteLines"
-                }
-            ],
-            "when":"textInputFocus && !editorReadonly"
         },
         {
             "before": [
@@ -108,20 +94,6 @@
     ],
     "vim.visualModeKeyBindingsNonRecursive":[
         {
-            "before": [
-                "X"
-            ],
-            "commands": [
-                {
-                    "command": "editor.action.clipboardCopyAction"
-                },
-                {
-                    "command": "deleteRight"
-                }
-            ],
-            "when":"textInputFocus"
-        },
-        {
             "before": [ "d" ],
             "after": [ "\"", "_", "d" ]
         },
@@ -129,5 +101,5 @@
             "before": [ "c" ],
             "after": [ "\"", "_", "c" ]
         }
-    ]
+    ],
 }
