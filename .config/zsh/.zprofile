@@ -8,8 +8,6 @@ export READER='zathura'
 
 export MUSIC='/home/patriktrefil/Mega/Music/'
 
-export BW_SESSION="8R1SrdlsttDkEi3VPYInyLbotEs8cAmOc0l1NflSataIcSPkA+yuBikVMPPNo/kqPjCYQHmDVrvJZL4JzZov2A=="
-
 export TZ='Europe/Prague'
 # ZSH config
 export ZDOTDIR="$HOME/.config/zsh"
@@ -51,10 +49,12 @@ export WGETRC="${XDG_CONFIG_HOME}/wget/wgetrc"
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 
 # Configs
-export MYVIMRC="${XDG_CONFIG_HOME}/vim/vimrc"
+export MYVIMRC="${XDG_CONFIG_HOME}/nvim/init.vim"
 export VIMINIT='source $MYVIMRC'
 export VIFM="${XDG_CONFIG_HOME}/vifm"
-export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/config"
+
+# Breaks joplin
+#export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/config"
 
 export QT_QPA_PLATFORMTHEME="gtk2" # make qt use gtk2 (was qt5ct)
 export GTK2_RC_FILES="$HOME/.config/gtk-2.0/.gtkrc-2.0"
@@ -78,4 +78,4 @@ export FZF_DEFAULT_OPTS='--multi --reverse --preview="([[ -f {} ]] && ([[ {} = "
 # Switch escape and caps if tty and no passwd required:
 sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/tty.map 2>/dev/null
 
-tdm
+tdm --silent
