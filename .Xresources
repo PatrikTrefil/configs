@@ -2,7 +2,7 @@
 *.alpha: 1
 
 !! Set a default font and font size as below:
-*.font: monospace:size=14
+*.font: monospace:size=18
 
 Xft.dpi:       96
 Xft.antialias: true
