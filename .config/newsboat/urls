@@ -4,6 +4,7 @@
 https://lukesmith.xyz/rss.xml
 https://www.eff.org/rss/updates.xml
 https://hasbrouck.org/blog/index.rdf
+https://nextcloud.com/blogfeed
 
 "  "
 " ---VIDEOS--- "
@@ -25,7 +26,8 @@ file:///home/patriktrefil/.config/newsboat/rss/3Blue1Brown.xml
 " ---PODCASTS--- "
 
 http://feed.syntax.fm/rss
-http://podcasts.joerogan.net/feed
+http://joeroganexp.joerogan.libsynpro.com/rss
+https://notoverthinking.com/rss/
 
 "  "
 " ---SCHOOL--- "

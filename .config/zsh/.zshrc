@@ -25,22 +25,6 @@ export KEYTIMEOUT=1
 : "${VI_NORMAL_MODE_INDICATOR="%(?.%F{blue}•%f%F{cyan}•%f%F{green}•%f.%F{red}•••%f) "}"
 : "${VI_INSERT_MODE_INDICATOR="%(?.%F{blue}❯%f%F{cyan}❯%f%F{green}❯%f.%F{red}❯❯❯%f) "}"
 
-# Keybindings
-bindkey -s '^o' 'search-open\n'
-
-fzf-edit() { 
-  file=$(fzf); 
-  [[ -d $file || -f $file || -h $file ]] && $EDITOR $file
-}
-
-bindkey -s '^n' 'search-edit --term\n'
-
-bindkey -s '^h' 'search-edit --term --home\n'
-bindkey -s '^q' 'search-edit --gui\n'
-
-cf() { cd "$(find . -type d 2>/dev/null | fzf)" }
-bindkey -s '^d' 'cf\n'
-
 # rga - recursive ripgrep
 # files-with-matches - only print file paths with matches
 # -uu - hidden
@@ -63,6 +47,15 @@ rga-fzf() {
 
 cleanup() { rm -f *.dvi *.log *.aux }
 
+# Keybindings
+bindkey -s '^o' 'search-open\n'
+bindkey -s '^n' 'search-edit --gui\n'
+bindkey -s '^h' 'search-edit --gui --home\n'
+bindkey -s '^l' 'search-edit --term\n'
+bindkey -s '^w' 'nvim ~/Mega/Other/Todo/todo.txt\n'
+
+cd_fzf() { cd "$(find . -type d 2>/dev/null | fzf)" }
+bindkey -s '^d' 'cd_fzf\n'
 bindkey -s '^p' 'rga-fzf\n'
 
 ## Edit line in vim with ctrl-e:

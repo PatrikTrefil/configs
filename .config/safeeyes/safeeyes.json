@@ -1,7 +1,7 @@
 {
     "allow_postpone": false,
     "long_break_duration": 300,
-    "long_break_interval": 20,
+    "long_break_interval": 30,
     "long_breaks": [
         {
             "name": "Walk for a while"

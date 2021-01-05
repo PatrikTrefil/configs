@@ -17,9 +17,7 @@ Print
   scrot ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png
 alt + Print
 	scrot -s ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png
-super + p
-  bitwarden-dmenu --clear-clipboard 30 --session-timeout 1000 --sync-vault-after 3600 --on-error 'xargs notify-send --urgency=low'
-super + e
+super + shift + e
   ~/.scripts/dmenu-emoji/dmenu-emoji.sh
 super + c 
   ~/.scripts/dmenu-khard-contacts/scont
@@ -29,22 +27,30 @@ super + g
 	bw generate --number --uppercase --lowercase --special | xclip -selection clipboard
 super + v
 	~/.scripts/vpn && pkill -RTMIN+3 dwmblocks
-super + t
+super + b
   ~/.scripts/safeeyes-toggle && pkill -RTMIN+4 dwmblocks
-super + alt + t
+super + alt + b
   safeeyes -t
-super + s; {a, t, n, b}
-  {search-window pulsemixer, safeeyes --settings, nm-connection-editor, blueman-manager}
+super + s
+  ~/.scripts/settings
 super + a
   search-window "ncmpcpp -s browser"
+super + w
+  search-window "nvim $HOME/Mega/Other/Todo/todo.txt"
+super + p
+  python3 ~/.scripts/dmenu-bitwarden.py
+super + q
+  search-window "quicknotes_wiki"
+super + e
+  abbrev
 
 #Launch apps
 super + o
   search-window "$HOME/.scripts/search-open"
 super + n
-  search-window "$HOME/.scripts/search-edit --gnvim"
-super + h
   search-window "$HOME/.scripts/search-edit --gui"
+super + shift + n
+  search-window "$HOME/.scripts/search-edit --reuse-code"
 super + Return
   $TERMINAL
 alt + p
@@ -56,8 +62,12 @@ XF86Audio{LowerVolume,RaiseVolume}
 #	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ {-10%,+10%} && refbar
 XF86AudioPlay
   playerctl play-pause 
+alt + XF86AudioPlay
+  mpc toggle
 XF86AudioMute
   amixer -q set Master toggle && pkill -RTMIN+2 dwmblocks
 #  pactl set-sink-mute @DEFAULT_SINK@ toggle && refbar
 ctrl + XF86Audio{LowerVolume,RaiseVolume}
   playerctl {previous,next}
+alt + XF86Audio{LowerVolume,RaiseVolume}
+  mpc {prev, next}

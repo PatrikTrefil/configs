@@ -28,6 +28,9 @@ Plug 'lervag/vimtex' " <Space> + ll => live preview
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Completion
 " Linting
 Plug 'vim-syntastic/syntastic'
+
+Plug 'vimwiki/vimwiki' " Note-manager
+Plug 'ducbueno/vimwiki-roam' " Add Roam funcionality
 " Productivity
 Plug 'dbeniamine/todo.txt-vim'
 Plug 'tpope/vim-surround' " Surround X with a character
@@ -42,7 +45,7 @@ Plug 'mattn/emmet-vim' " HTML Snippets Press , , (comma + comma)
 "" Visuals
 Plug 'sheerun/vim-polyglot' " Syntax highlighting
 Plug 'ap/vim-css-color' " See color previews
-Plug 'frazrepo/vim-rainbow' " Give each bracket a different color
+Plug 'junegunn/rainbow_parentheses.vim'
 "" Git
 Plug 'airblade/vim-gitgutter' " Manage git directly from vim
 Plug 'tpope/vim-fugitive' " Git commands in Vim
@@ -126,6 +129,12 @@ endfu
 com! Writing call Writing()
 autocmd FileType markdown Writing
 "}}}
+" Other {{{
+"map <C-q> :!code %<CR>
+func! Code()
+  !code %
+endfu
+" }}}
 "}}}
 " Mappings{{{
 " Go through tabs
@@ -133,7 +142,6 @@ map gt :bn<cr>
 map gT :bp<cr>
 map <C-n> :Files!<CR>
 map <C-p> :Rg!<CR>
-map <C-q> :!code %<CR>
 map <C-h> :Files! ~/<CR>
 nnoremap <leader>o :silent !xdg-open <C-R>=escape("<C-R><C-F>", "#?&;\|%")<CR><CR>
 " New splits " {{{
@@ -147,9 +155,13 @@ noremap <silent> <C-Down> :resize -3<CR>
 " Plug-Conf "{{{
 nnoremap <Leader>r :source $MYVIMRC<CR>
 let g:tex_flavor = 'latex'
-let g:rainbow_active = 1 " Rainbow brackets "
 let g:user_emmet_leader_key=','
 let g:latex_pdf_viewer="zathura"
+" Activation based on file type
+augroup rainbow_lisp
+  autocmd!
+  autocmd FileType python,html RainbowParentheses
+augroup END
 " Todo.txt "{{{
 " Use todo#complete as the omni complete function for todo files
 au filetype todo setlocal omnifunc=todo#Complete
@@ -172,12 +184,17 @@ noremap <c-l> :Snippets<CR>
 imap <c-x><c-f> <plug>(fzf-complete-path)
 " }}}
 " VimWiki "{{{
-let vimwiki_default = {}
-"let vimwiki_default.path =  '/tmp/testwikis/vimwiki'
-let vimwiki_default.syntax = 'default'
-let vimwiki_default.ext = '.wiki'
-let vimwiki_default.name = 'DefaultSyntax'
-let g:vimwiki_list = [vimwiki_default]
+ let g:vimwiki_folding = 'custom' 
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                       \'maxhi': 1, 'syntax': 'default', 'ext': '.wiki'}]
+
+hi VimwikiHeader1 guifg=#FFB86C cterm=bold gui=bold
+hi VimwikiHeader2 guifg=#BD93F9 cterm=bold gui=bold
+hi VimwikiHeader3 guifg=#F1FA8C cterm=bold gui=bold
+hi VimwikiHeader4 guifg=#50FA7B cterm=bold gui=bold
+"hi VimwikiHeader5 guifg=#00FFFF
+"hi VimwikiHeader6 guifg=#FFFF00
+hi VimwikiLink term=underline ctermfg=cyan guifg=cyan gui=underline
 "}}}
 " Goyo "{{{
 let g:goyo_width = 90
@@ -513,3 +530,4 @@ func! StartMDPreview()
   call PreviewMD()
 endfu
 " }}}
+
