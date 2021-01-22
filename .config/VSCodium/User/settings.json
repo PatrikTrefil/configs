@@ -3,6 +3,7 @@
     "editor.fontSize": 18,
     "debug.console.fontSize": 20,
     "markdown.preview.fontSize": 18,
+    "update.mode": "none",
     "terminal.integrated.fontSize": 17,
     "diffEditor.ignoreTrimWhitespace": false,
     "workbench.startupEditor": "newUntitledFile",
