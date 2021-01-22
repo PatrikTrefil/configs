@@ -1,64 +1,86 @@
-  System Operations
+# MX Master 2 mouse
+# button 8 is Back in browser
+# button 9 is Forward in browser
+
+# System Operations
+# lock
 super + l
-  setxkbmap us && pkill -RTMIN+1 dwmblocks && $LOCK
+    setxkbmap us && pkill -RTMIN+1 dwmblocks && $LOCK
+# use internal display only
 alt + shift + i
-  xrandr --output "eDP1" --primary --auto --output "DP1" --off --output "DP3" --off
+    xrandr --output "eDP1" --primary --auto --output "DP1" --off --output "DP3" --off
 super + shift + r
-  ~/.scripts/reboot.sh
+    ~/.scripts/dmenu-reboot
 super + shift + x
-  ~/.scripts/shutdown.sh
+    ~/.scripts/dmenu-shutdown
 super + shift + s
-  sh ~/.scripts/dmenu-sleep
-super + k ; {c,u,d}
-  setxkbmap {cz qwerty, us, de} && pkill -RTMIN+1 dwmblocks
+    sh ~/.scripts/dmenu-sleep
+# keyboard layout toggle
+super + k
+    ~/.scripts/kb_toggle && pkill -RTMIN+1 dwmblocks
 
 # Other
+# screenshot
 Print
-  scrot ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png
+    scrot ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png && notify-send -t 2000 "Took a screenshot"
+# screenshot of selected window
 alt + Print
-	scrot -s ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png
+    scrot -s ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png && notify-send -t 2000 "Took a screnshot"
+# insert emoji
 super + shift + e
-  ~/.scripts/dmenu-emoji/dmenu-emoji.sh
+    ~/.scripts/dmenu-emoji/dmenu-emoji.sh
+# find contact
 super + c 
-  ~/.scripts/dmenu-khard-contacts/scont
+    ~/.scripts/dmenu-khard-contacts/scont
+# mute notifications
 super + m
-	dunstctl set-paused toggle && pkill -RTMIN+5 dwmblocks
+    dunstctl set-paused toggle && pkill -RTMIN+5 dwmblocks
+# generate password
 super + g
-	bw generate --number --uppercase --lowercase --special | xclip -selection clipboard
+    bw generate --number --uppercase --lowercase --special | xclip -selection clipboard
+# toggle vpn
 super + v
 	~/.scripts/vpn && pkill -RTMIN+3 dwmblocks
+# toggle safeeyes
 super + b
-  ~/.scripts/safeeyes-toggle && pkill -RTMIN+4 dwmblocks
+    ~/.scripts/safeeyes-toggle && pkill -RTMIN+4 dwmblocks
+# start break
 super + alt + b
-  safeeyes -t
+    safeeyes -t
+# settings
 super + s
-  ~/.scripts/settings
+    ~/.scripts/dmenu-settings
+# music
 super + a
-  search-window "ncmpcpp -s browser"
-super + w
-  search-window "nvim $HOME/Mega/Other/Todo/todo.txt"
+    search-window "ncmpcpp"
+# todos
+super + t
+    search-window "nvim $HOME/Mega/Other/Todo/todo.txt"
+# password selector
 super + p
-  python3 ~/.scripts/dmenu-bitwarden.py
+    python3 ~/.scripts/dmenu-bitwarden.py
+# quicknotes
 super + q
-  search-window "quicknotes_wiki"
+    search-window "quicknotes_wiki"
+# abbreviations
 super + e
-  abbrev
+    ~/.scripts/abbrev
 
 #Launch apps
 super + o
-  search-window "$HOME/.scripts/search-open"
+    search-window "$HOME/.scripts/search-open"
 super + n
-  search-window "$HOME/.scripts/search-edit --gui"
+    search-window "$HOME/.scripts/search-edit --gui"
 super + shift + n
-  search-window "$HOME/.scripts/search-edit --reuse-code"
+    search-window "$HOME/.scripts/search-edit --reuse-code"
 super + Return
-  $TERMINAL
+    $TERMINAL
 alt + p
-  dmenu_run 
+    dmenu_run 
   
 # Audio
 XF86Audio{LowerVolume,RaiseVolume}
-  amixer -q set Master 10%{-,+} unmute && pkill -RTMIN+2 dwmblocks 
+    amixer -q set Master 10%{-,+} unmute && pkill -RTMIN+2 dwmblocks 
 #	pactl set-sink-mute @DEFAULT_SINK@ 0 && pactl set-sink-volume @DEFAULT_SINK@ {-10%,+10%} && refbar
 XF86AudioPlay
   playerctl play-pause 
