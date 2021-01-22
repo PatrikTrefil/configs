@@ -95,7 +95,7 @@ set softtabstop=2 " when using Tab/Backspace add/delete whole tabs not a single 
 set shiftwidth=2 " determines how much a line is moved when using >>,<<,== (should be the same as tabstop)
 set hidden " ability to jump to new buffer without saving
 "}}}
-autocmd BufWritePost *sxhkdrc !killall "sxhkd" && setsid sxhkd 
+autocmd BufWritePost *sxhkdrc !pkill -SIGUSR1 sxhkd
 " Update binds when sxhkdrc is updated.
 autocmd BufWritePost *.py Format " Auto-format python files
 " Lin" numbers{{{
