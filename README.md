@@ -2,6 +2,8 @@
 
 these are my configs, feel free to look around
 
+most of the config files are for GNU/Linux programs, but there are some for MacOS too.
+
 
 ## Credits and References
 
