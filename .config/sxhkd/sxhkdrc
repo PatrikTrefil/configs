@@ -1,6 +1,6 @@
 # MX Master 2 mouse
-# button 8 is Back in browser
-# button 9 is Forward in browser
+# button 8 is Back (in browser)
+# button 9 is Forward (in browser)
 
 # System Operations
 # lock
@@ -58,7 +58,7 @@ super + t
     search-window "nvim $HOME/Mega/Other/Todo/todo.txt"
 # password selector
 super + p
-    python3 ~/.scripts/dmenu-bitwarden.py
+    python3 ~/Code/dmenu-bitwarden/dmenu-bitwarden.py
 # quicknotes
 super + q
     search-window "quicknotes_wiki"
