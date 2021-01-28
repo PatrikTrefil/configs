@@ -1,0 +1,1 @@
+/home/patriktrefil/.config/zsh/.zshrc
