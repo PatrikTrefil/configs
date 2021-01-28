@@ -14,6 +14,7 @@ text/html=vscodium-bin.desktop;
 text/plain=vscodium-bin.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird.desktop;
 text/x-tex=VSCodium.desktop;
+video/mp4=vlc.desktop;
 
 [Default Applications]
 inode/directory=file.desktop
