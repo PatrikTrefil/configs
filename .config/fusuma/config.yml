@@ -1,0 +1,23 @@
+swipe:
+  3:
+    left:
+      command: ""
+    right:
+      command: ""
+    up:
+      command: "xdotool key XF86AudioRaiseVolume"
+    down:
+      command: "xdotool key XF86AudioLowerVolume"
+pinch:
+  in:
+    command: "xdotool key ctrl+shift+plus"
+  out:
+    command: "xdotool key ctrl+minus"
+
+threshold:
+  swipe: 0.1
+  pinch: 0.1
+
+interval:
+  swipe: 0.2
+  pinch: 1.0
