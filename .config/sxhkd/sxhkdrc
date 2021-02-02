@@ -8,7 +8,7 @@ super + l
     setxkbmap us && pkill -RTMIN+1 dwmblocks && $LOCK
 # use internal display only
 alt + shift + i
-    xrandr --output "eDP1" --primary --auto --output "DP1" --off --output "DP3" --off
+    xrandr --output "e-DP1" --primary --auto --output "DP-1" --off --output "DP-3" --off
 super + shift + r
     ~/.scripts/dmenu-reboot
 super + shift + x
@@ -26,6 +26,12 @@ Print
 # screenshot of selected window
 alt + Print
     scrot -s ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png && notify-send -t 2000 "Took a screnshot"
+# screenshot to clipboard
+ctrl + Print
+    scrot -e 'xclip -selection clipboard -t image/png -i $f' && notify-send -t 2000 "Copied screenshot to clipboard"
+# screenshot of selected window to clipboard
+ctrl + alt + Print
+    scrot -s -e 'xclip -selection clipboard -t image/png -i $f' && notify-send -t 2000 "Copied screenshot to clipboard"
 # insert emoji
 super + shift + e
     ~/.scripts/dmenu-emoji/dmenu-emoji.sh
@@ -52,13 +58,13 @@ super + s
     ~/.scripts/dmenu-settings
 # music
 super + a
-    search-window "ncmpcpp"
+    search-window "ncmpcpp --screen browser"
 # todos
 super + t
     search-window "nvim $HOME/Mega/Other/Todo/todo.txt"
 # password selector
 super + p
-    python3 ~/Code/dmenu-bitwarden/dmenu-bitwarden.py
+   setsid ~/Code/dmenu-bitwarden/dmenu-bitwarden.py
 # quicknotes
 super + q
     search-window "quicknotes_wiki"
