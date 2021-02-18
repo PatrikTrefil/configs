@@ -6,8 +6,8 @@ redshift & # Night-shift
 ~/.scripts/wallpaper & # Desktop background
 xautolock -time 11 -notifier notify-send -notify 120 -locker ~/.scripts/xlock & # Autolock
 xfce4-power-manager & # Control screen brightness, power management
-sleep 5 && dwmblocks & # Status bar
+sleep 2 && dwmblocks & # Status bar
 mpd & # Music Player Daemon
 dunst & # Notifications
 safeeyes -e & # Break Reminder
-xset r rate 300 40 &	# Speed key repetition (xrate) up
+fusuma & # Touchpad Gestures
