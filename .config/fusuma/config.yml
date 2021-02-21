@@ -1,18 +1,40 @@
 swipe:
   3:
     left:
-      command: ""
+      # back in browser
+      command: "xdotool key alt+Right"
     right:
-      command: ""
+      # forward in browser
+      command: "xdotool key alt+Left"
     up:
+      # audio up
       command: "xdotool key XF86AudioRaiseVolume"
     down:
+      # audio down
       command: "xdotool key XF86AudioLowerVolume"
+  4:
+    left:
+      # skip song
+      # bind in sxhkd
+      command: "xdotool key alt+XF86AudioLowerVolume"
+      interval: 1.0
+      threshold: 1.0
+    right:
+      # previous song
+      command: "xdotool key alt+XF86AudioRaiseVolume"
+      interval: 1.0
+      threshold: 1.0
+
 pinch:
+  # zoom
   in:
     command: "xdotool key ctrl+shift+plus"
+    interval: 1.7
+    threshold: 0.5
   out:
     command: "xdotool key ctrl+minus"
+    interval: 1.7
+    threshold: 0.5
 
 threshold:
   swipe: 0.1
