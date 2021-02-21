@@ -1,118 +1,125 @@
 {
-    // General
-    "editor.fontSize": 18,
-    "debug.console.fontSize": 20,
-    "markdown.preview.fontSize": 18,
-    "update.mode": "none",
-    "terminal.integrated.fontSize": 17,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 1,
-    "window.menuBarVisibility": "toggle",
-    "editor.lineNumbers": "relative",
-    // The number of spaces a tab is equal to. This setting is overridden
-    // based on the file contents when `editor.detectIndentation` is true.
-    "editor.tabSize": 4,
+  // General
+  "editor.fontSize": 18,
+  "debug.console.fontSize": 20,
+  "markdown.preview.fontSize": 18,
+  "update.mode": "none",
+  "terminal.integrated.fontSize": 17,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 1,
+  "window.menuBarVisibility": "toggle",
+  "editor.lineNumbers": "relative",
+  "firefox.executable": "/usr/bin/firefox",
+  // When opening a file, `editor.tabSize` and `editor.insertSpaces`
+  // will be detected based on the file contents. Set to false to keep
+  // the values you've explicitly set, above.
+  "editor.detectIndentation": false,
 
-    // Insert spaces when pressing Tab. This setting is overriden
-    // based on the file contents when `editor.detectIndentation` is true.
-    "editor.insertSpaces": true,
+  // The number of spaces a tab is equal to. This setting is overridden
+  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.tabSize": 2,
+  "[sass, css]": {
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[javascript, json]": {
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
 
-    // When opening a file, `editor.tabSize` and `editor.insertSpaces`
-    // will be detected based on the file contents. Set to false to keep
-    // the values you've explicitly set, above.
-    "editor.detectIndentation": false,
+  // Insert spaces when pressing Tab. This setting is overriden
+  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.insertSpaces": true,
 
-    // Python
-    "python.showStartPage": false,
-    "python.defaultInterpreterPath": "/usr/bin/python3",
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.mypyEnabled": true,
-    // Go
-    "go.useLanguageServer": true,
-    // Latex
-    "latex-workshop.view.pdf.viewer": "external",
-    "latex-workshop.view.pdf.external.viewer.command": "zathura",
-    "latex-workshop.view.pdf.external.viewer.args": [
-        "--synctex-editor-command",
-        "code --reuse-window -g \"%{input}:%{line}\"",
-        "%PDF%"
-    ],
-    "latex-workshop.view.pdf.external.synctex.command": "zathura",
-    "latex-workshop.view.pdf.external.synctex.args": [
-        "--synctex-forward=%LINE%:0:%TEX%",
-        "%PDF%"
-    ],
-    "latex-workshop.synctex.afterBuild.enabled": false,
-    // Vim
-    "vim.handleKeys": {"<C-d>": false,"<C-c>": false,"<C-v>": false,"<C-x>": false,"<C-a>": false, "<C-w>": false},
-    "keyboard.dispatch": "keyCode"    ,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": false,
-    "vim.hlsearch": true,
-    "vim.leader": ",",
-    "editor.mouseWheelZoom": true,
-    "editor.renderControlCharacters": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "u"
-            ],
-            "commands": [
-                "undo"
-            ]
-        },
-        {
-            "before": [
-                "U"
-            ],
-            "commands": [
-                "redo"
-            ]
-        },
-        {
-            "before": [
-                "\"", "+", "p"
-            ],
-            "after": [
-                "p"
-            ]
-        },
-        {
-            "before": [ "d" ],
-            "after": [ "\"", "_", "d" ]
-        },
-        {
-            "before": [ "D" ],
-            "after": [ "\"", "_", "D" ]
-        },
-        {
-            "before": [ "d", "d" ],
-            "after": [ "\"", "_", "d", "d" ]
-        },
-        {
-            "before": [ "c" ],
-            "after": [ "\"", "_", "c" ]
-        },
-        {
-            "before": [ "C" ],
-            "after": [ "\"", "_", "C" ]
-        },
-        {
-            "before": [ "c", "c" ],
-            "after": [ "\"", "_", "c", "c" ]
-        }
-
-    ],
-    "vim.visualModeKeyBindingsNonRecursive":[
-        {
-            "before": [ "d" ],
-            "after": [ "\"", "_", "d" ]
-        },
-        {
-            "before": [ "c" ],
-            "after": [ "\"", "_", "c" ]
-        }
-    ],
+  // Python
+  "python.showStartPage": false,
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "python.linting.pylintEnabled": false,
+  "python.linting.mypyEnabled": true,
+  // Go
+  "go.useLanguageServer": true,
+  // Latex
+  "latex-workshop.view.pdf.viewer": "external",
+  "latex-workshop.view.pdf.external.viewer.command": "zathura",
+  "latex-workshop.view.pdf.external.viewer.args": [
+    "--synctex-editor-command",
+    "code --reuse-window -g \"%{input}:%{line}\"",
+    "%PDF%"
+  ],
+  "latex-workshop.view.pdf.external.synctex.command": "zathura",
+  "latex-workshop.view.pdf.external.synctex.args": [
+    "--synctex-forward=%LINE%:0:%TEX%",
+    "%PDF%"
+  ],
+  "latex-workshop.synctex.afterBuild.enabled": false,
+  // Vim
+  "vim.easymotion": true,
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false,
+    "<C-a>": false,
+    "<C-w>": false
+  },
+  "keyboard.dispatch": "keyCode",
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": false,
+  "vim.hlsearch": true,
+  "vim.leader": ",",
+  "editor.mouseWheelZoom": true,
+  "editor.renderControlCharacters": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["U"],
+      "commands": ["redo"]
+    },
+    {
+      "before": ["\"", "+", "p"],
+      "after": ["p"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["d", "d"],
+      "after": ["\"", "_", "d", "d"]
+    },
+    {
+      "before": ["c"],
+      "after": ["\"", "_", "c"]
+    },
+    {
+      "before": ["C"],
+      "after": ["\"", "_", "C"]
+    },
+    {
+      "before": ["c", "c"],
+      "after": ["\"", "_", "c", "c"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["c"],
+      "after": ["\"", "_", "c"]
+    }
+  ]
 }
