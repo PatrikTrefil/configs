@@ -18,6 +18,7 @@ bind-key j down
 bind-key k up
 bind-key l open
 bind-key h quit
+bind-key U toggle-article-read
 
 
 color listnormal cyan default

@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>LBRY @3Blue1Brown Channel Feed</title>
+        <link>https://lbryfeed.melroy.org/channel/3Blue1Brown</link>
+        <description>Follow your LBRY channels using your favorite RSS reader!</description>
+        <lastBuildDate>Wed, 07 Oct 2020 07:54:01 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator> </generator>
+        <item>
+            <title><![CDATA[Hamming codes part 2, the elegance of it all (video)]]></title>
+            <link>lbry://hamming-codes-part-2-the-elegance-of-it#9ace0a69465939d5c56f271c1ff7472f593bf6cf</link>
+            <guid>9ace0a69465939d5c56f271c1ff7472f593bf6cf</guid>
+            <pubDate>Fri, 04 Sep 2020 15:36:24 GMT</pubDate>
+            <description><![CDATA[Start with part 1: https://youtu.be/X8jsijhllIA<br />
+Ben Eater implementing Hamming codes on breadboards: https://youtu.be/h0jloehRKas<br />
+Brought to you by you: https://3b1b.co/thanks<br />
+<br />
+------------------<br />
+<br />
+These animations are largely made using manim, a scrappy open-source python library:  https://github.com/3b1b/manim<br />
+<br />
+If you want to check it out, I feel compelled to warn you that it's not the most well-documented tool, and it has many other quirks you might expect in a library someone wrote with<br/><img src="https://thumbnails.lbry.com/b3NxrZOu_CE" width="400" alt="Hamming codes part 2, the elegance of it all" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/b3NxrZOu_CE" length="0" type="image//b3NxrZOu_CE"/>
+        </item>
+        <item>
+            <title><![CDATA[Hamming codes, h■w to ov■rco■e n■ise. (video)]]></title>
+            <link>lbry://hamming-codes-h-w-to-ov-rco-e-n-ise#34d8ccd24cb3292755c536bea36c29d18465f6d6</link>
+            <guid>34d8ccd24cb3292755c536bea36c29d18465f6d6</guid>
+            <pubDate>Fri, 04 Sep 2020 15:32:50 GMT</pubDate>
+            <description><![CDATA[A discovery-oriented introduction to error correction codes.<br />
+Part 2: https://youtu.be/b3NxrZOu_CE<br />
+Ben Eater:'s take: https://youtu.be/h0jloehRKas<br />
+Brought to you by you: https://3b1b.co/thanks<br />
+<br />
+You can read Hamming's own perspective on his discovery of these codes in chapter 12 of "The Art of Doing Science and Engineering".<br />
+https://amzn.to/3lwcnmh<br />
+<br />
+------------------<br />
+<br />
+These animations are largely made using manim, a scrappy open-source python library:  https://github.com/3b1b/manim<br />
+<br />
+If you <br/><img src="https://thumbnails.lbry.com/X8jsijhllIA" width="400" alt="Hamming codes, h■w to ov■rco■e n■ise." />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/X8jsijhllIA" length="0" type="image//X8jsijhllIA"/>
+        </item>
+        <item>
+            <title><![CDATA[Why I love 808,017,424,794,512,875,886,459,904,961,710,757,005,754,368,000,000,000 (video)]]></title>
+            <link>lbry://why-i-love-808-017-424-794-512-875-886#7425e0830d6e1fb20d5b29295f654972f262d8fe</link>
+            <guid>7425e0830d6e1fb20d5b29295f654972f262d8fe</guid>
+            <pubDate>Wed, 19 Aug 2020 14:01:39 GMT</pubDate>
+            <description><![CDATA[An introduction to group theory, and the monster group.<br />
+Special thanks to these supporters: https://3b1b.co/thanks<br />
+Part of the #MegaFavNumbers project: https://www.youtube.com/playlist?list=PLar4u0v66vIodqt3KSZPsYyuULD5meoAo<br />
+<br />
+To join the gang, upload your own video on your own favorite number over 1,000,000 with the hashtag #MegaFavNumbers, and the word MegaFavNumbers in the title, and it'll be added to the playlist above.<br />
+<br />
+Thanks to Richard Borcherds for helpful comments while putting this vide<br/><img src="https://thumbnails.lbry.com/mH0oCDa74tE" width="400" alt="Why I love 808,017,424,794,512,875,886,459,904,961,710,757,005,754,368,000,000,000" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/mH0oCDa74tE" length="0" type="image//mH0oCDa74tE"/>
+        </item>
+        <item>
+            <title><![CDATA[The impossible chessboard puzzle (video)]]></title>
+            <link>lbry://the-impossible-chessboard-puzzle#7775ae3ccf17676caff1fc11b331299770b0f95e</link>
+            <guid>7775ae3ccf17676caff1fc11b331299770b0f95e</guid>
+            <pubDate>Sun, 05 Jul 2020 18:50:36 GMT</pubDate>
+            <description><![CDATA[An information puzzle with an interesting twist<br />
+Solution on Stand-up Maths: https://youtu.be/as7Gkm7Y7h4<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: https://3b1b.co/chess-thanks<br />
+<br />
+------------------<br />
+0:00 Introduction<br />
+3:58 Visualizing the two-square case<br />
+5:46 Visualizing the three-square case<br />
+12:19 Proof that it's impossible<br />
+16:22 Explicit painting of the hypercube<br />
+------------------<br />
+<br />
+These animations are largely made using manim, a scrappy open-source python library:  https://gi<br/><img src="https://thumbnails.lbry.com/wTJI_WuZSwE" width="400" alt="The impossible chessboard puzzle" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/wTJI_WuZSwE" length="0" type="image//wTJI_WuZSwE"/>
+        </item>
+        <item>
+            <title><![CDATA[Tips to be a better problem solver [Last lecture] | Lockdown math ep. 10 (video)]]></title>
+            <link>lbry://tips-to-be-a-better-problem-solver-last#a711aa61bdd25be6f1cc3bf10a729a65480ad099</link>
+            <guid>a711aa61bdd25be6f1cc3bf10a729a65480ad099</guid>
+            <pubDate>Fri, 22 May 2020 20:14:56 GMT</pubDate>
+            <description><![CDATA[Tips on problem-solving, with examples from geometry, trig, and probability.<br />
+Past episodes with integrated quizzes: https://itempool.com/c/3b1b<br />
+Full playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: https://3b1b.co/ldm-thanks<br />
+Huge huge thanks to Ben Eater: https://www.youtube.com/user/eaterbc<br />
+And Cam Christensen, creator of ItemPool: https://itempool.com/<br />
+<br />
+Notes by Ngân Vũ:<br />
+https://twitter.com/ThuyNgan<br/><img src="https://thumbnails.lbry.com/QvuQH4_05LI" width="400" alt="Tips to be a better problem solver [Last lecture] | Lockdown math ep. 10" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/QvuQH4_05LI" length="0" type="image//QvuQH4_05LI"/>
+        </item>
+        <item>
+            <title><![CDATA[Intuition for i to the power i | Lockdown math ep. 9 (video)]]></title>
+            <link>lbry://intuition-for-i-to-the-power-i-lockdown#6c840ea7d766b8b26a942ddab51c95e7d87be81c</link>
+            <guid>6c840ea7d766b8b26a942ddab51c95e7d87be81c</guid>
+            <pubDate>Fri, 15 May 2020 21:23:19 GMT</pubDate>
+            <description><![CDATA[i^i, visualized, and explained.<br />
+Full playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: https://3b1b.co/thanks<br />
+<br />
+Mistakes:<br />
+At 1:06:20, when changing r to equal 0.69*i, I said "this is what we might think of as (2i)^x", but that is not correct.  It's what we'd think of as [Exp(ln(2)*i)]^x for whatever complex number Exp(ln(2)*i) is.<br />
+<br />
+Video by Matt Parker:<br />
+https://youtu.be/9tlHQOKMHGA<br />
+<br />
+Video by Red Pen Bla<br/><img src="https://thumbnails.lbry.com/pq9LcwC7CoY" width="400" alt="Intuition for i to the power i | Lockdown math ep. 9" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/pq9LcwC7CoY" length="0" type="image//pq9LcwC7CoY"/>
+        </item>
+        <item>
+            <title><![CDATA[Contact Tracing and Privacy Protection (via Nicky Case) (video)]]></title>
+            <link>lbry://contact-tracing-and-privacy-protection#c1894a2b1895b98145da4781ba279e81f9b9c274</link>
+            <guid>c1894a2b1895b98145da4781ba279e81f9b9c274</guid>
+            <pubDate>Thu, 14 May 2020 15:00:01 GMT</pubDate>
+            <description><![CDATA[Help spread the message: https://3b1b.co/tweet-ctracing<br />
+Original post by Nicky Case: https://ncase.me/contact-tracing/<br />
+New post by Nicky on COVID-19: https://ncase.me/covid-19/<br />
+Consider supporting his work: https://www.patreon.com/ncase/<br />
+Supporters of this video: https://3b1b.co/ctracing-thanks<br />
+<br />
+DP-3T Whitepaper:<br />
+https://github.com/DP-3T/documents/blob/master/DP3T%20White%20Paper.pdf<br />
+<br />
+Full repo:<br />
+https://github.com/DP-3T<br />
+<br />
+One app which implements a variant of this using ultrasound for better prox<br/><img src="https://thumbnails.lbry.com/D__UaR5MQao" width="400" alt="Contact Tracing and Privacy Protection (via Nicky Case)" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/D__UaR5MQao" length="0" type="image//D__UaR5MQao"/>
+        </item>
+        <item>
+            <title><![CDATA[The power tower puzzle | Lockdown math ep. 8 (video)]]></title>
+            <link>lbry://the-power-tower-puzzle-lockdown-math-ep#1be2e04098a5ccf14802460900864ef1125f6bde</link>
+            <guid>1be2e04098a5ccf14802460900864ef1125f6bde</guid>
+            <pubDate>Tue, 12 May 2020 19:59:48 GMT</pubDate>
+            <description><![CDATA[A fun puzzle stemming from repeated exponentiation.<br />
+Full playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: https://3b1b.co/thanks<br />
+<br />
+Play along on Desmos:<br />
+https://www.desmos.com/calculator/nul32eaaa9<br />
+<br />
+Related videos.<br />
+Calculus series:<br />
+https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr<br />
+<br />
+In particular look at:<br />
+https://youtu.be/CfW845LNObM<br />
+<br />
+Numberphile on Grahm's constant:<br />
+https://youtu<br/><img src="https://thumbnails.lbry.com/elQVZLLiod4" width="400" alt="The power tower puzzle | Lockdown math ep. 8" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/elQVZLLiod4" length="0" type="image//elQVZLLiod4"/>
+        </item>
+        <item>
+            <title><![CDATA[What makes the natural log "natural"? | Lockdown math ep. 7 (video)]]></title>
+            <link>lbry://what-makes-the-natural-log-natural#d206f91b4a5e1caeb3bab7171c4fda3cf4920a1a</link>
+            <guid>d206f91b4a5e1caeb3bab7171c4fda3cf4920a1a</guid>
+            <pubDate>Fri, 08 May 2020 20:22:12 GMT</pubDate>
+            <description><![CDATA[Answer live questions at https://3b1b.co/live<br />
+Ask a question or comment via https://3b1b.co/ask<br />
+All about ln(x)<br />
+Full playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: https://3b1b.co/thanks<br />
+<br />
+------------------<br />
+The live question setup with stats on-screen is powered by Itempool.<br />
+https://itempool.com/<br />
+<br />
+Curious about other animations?<br />
+https://www.3blue1brown.com/faq#manim<br />
+<br />
+Music by Vincent Rubinetti.<br />
+Down<br/><img src="https://thumbnails.lbry.com/4PDoT7jtxmw" width="400" alt="What makes the natural log "natural"? | Lockdown math ep. 7" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/4PDoT7jtxmw" length="0" type="image//4PDoT7jtxmw"/>
+        </item>
+        <item>
+            <title><![CDATA[Logarithm Fundamentals | Lockdown math ep. 6 (video)]]></title>
+            <link>lbry://logarithm-fundamentals-lockdown-math-ep#5661ffa31079d049d75c71f723b53be7bf8ebd7c</link>
+            <guid>5661ffa31079d049d75c71f723b53be7bf8ebd7c</guid>
+            <pubDate>Tue, 05 May 2020 20:36:51 GMT</pubDate>
+            <description><![CDATA[Back to the basics with logarithms.<br />
+Full playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: https://3b1b.co/thanks<br />
+<br />
+------------------<br />
+The live question setup with stats on-screen is powered by Itempool.<br />
+https://itempool.com/<br />
+<br />
+Curious about other animations?<br />
+https://www.3blue1brown.com/faq#manim<br />
+<br />
+Music by Vincent Rubinetti.<br />
+Download the music on Bandcamp:<br />
+https://vincerubinetti.bandcamp.com/album/the-mu<br/><img src="https://thumbnails.lbry.com/cEvgcoyZvB4" width="400" alt="Logarithm Fundamentals | Lockdown math ep. 6" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/cEvgcoyZvB4" length="0" type="image//cEvgcoyZvB4"/>
+        </item>
+        <item>
+            <title><![CDATA[Imaginary interest rates | Lockdown math ep. 5 (video)]]></title>
+            <link>lbry://imaginary-interest-rates-lockdown-math#d1c02b3021a4bde2643aadaaaaa33c31c013930c</link>
+            <guid>d1c02b3021a4bde2643aadaaaaa33c31c013930c</guid>
+            <pubDate>Fri, 01 May 2020 20:11:37 GMT</pubDate>
+            <description><![CDATA[Compound interest, e, and how it relates to circles.<br />
+Full playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: https://3b1b.co/thanks<br />
+<br />
+Great Mathologer video:<br />
+https://youtu.be/-dhHrg-KbJ0<br />
+<br />
+My other videos on imaginary exponents:<br />
+https://youtu.be/v0YEaeIClKY<br />
+https://youtu.be/mvmuCPvRoWQ<br />
+<br />
+Mistakes:<br />
+In the off-handed remarks on quaternions, I mentioned rotation in 4d would require 10 degrees of freedom.  Tha<br/><img src="https://thumbnails.lbry.com/IAEASE5GjdI" width="400" alt="Imaginary interest rates | Lockdown math ep. 5" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/IAEASE5GjdI" length="0" type="image//IAEASE5GjdI"/>
+        </item>
+        <item>
+            <title><![CDATA[What is Euler's formula actually saying? | Lockdown math ep. 4 (video)]]></title>
+            <link>lbry://what-is-euler-s-formula-actually-saying#8f2bf6d230e8f0a3dba4cf96fa65d3df0445d6c9</link>
+            <guid>8f2bf6d230e8f0a3dba4cf96fa65d3df0445d6c9</guid>
+            <pubDate>Tue, 28 Apr 2020 19:58:20 GMT</pubDate>
+            <description><![CDATA[The connection between exponents and rotation<br />
+Full playlist: https://www.youtube.com/playlist?list=PLZHQObOWTQDP5CVelJJ1bNDouqrAhVPev<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/thanks<br />
+<br />
+------------------<br />
+The live question setup with stats on-screen is powered by Itempool.<br />
+https://itempool.com/<br />
+<br />
+Curious about other animations?<br />
+https://www.3blue1brown.com/faq#manim<br />
+<br />
+Music by Vincent Rubinetti.<br />
+Download the music on Bandcamp:<br />
+https://vincerubinetti.bandcamp.com/alb<br/><img src="https://thumbnails.lbry.com/ZxYOEwM6Wbk" width="400" alt="What is Euler's formula actually saying? | Lockdown math ep. 4" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/ZxYOEwM6Wbk" length="0" type="image//ZxYOEwM6Wbk"/>
+        </item>
+        <item>
+            <title><![CDATA[Complex number fundamentals | Lockdown math ep. 3 (video)]]></title>
+            <link>lbry://complex-number-fundamentals-lockdown#d77930ffabd59364a32afcd19bc170a0264c8aaa</link>
+            <guid>d77930ffabd59364a32afcd19bc170a0264c8aaa</guid>
+            <pubDate>Fri, 24 Apr 2020 20:31:26 GMT</pubDate>
+            <description><![CDATA[Intro to the geometry complex numbers.<br />
+Last stream: https://youtu.be/yBw67Fb31Cs<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/thanks<br />
+<br />
+------------------<br />
+The live question setup with stats on-screen is powered by Itempool.<br />
+https://itempool.com/<br />
+<br />
+The graphing calculator used here is Desmos.<br />
+https://www.desmos.com/<br />
+<br />
+Curious about other animations?<br />
+https://www.3blue1brown.com/faq#manim<br />
+<br />
+Music by Vincent Rubinetti.<br />
+Download the music on Bandcamp:<br />
+https://vincerubinetti<br/><img src="https://thumbnails.lbry.com/5PcpBw5Hbwo" width="400" alt="Complex number fundamentals | Lockdown math ep. 3" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/5PcpBw5Hbwo" length="0" type="image//5PcpBw5Hbwo"/>
+        </item>
+        <item>
+            <title><![CDATA[Trigonometry fundamentals | Lockdown math ep. 2 (video)]]></title>
+            <link>lbry://trigonometry-fundamentals-lockdown-math#17cca1b4877a82510be6e2d62dcb377d7b68b308</link>
+            <guid>17cca1b4877a82510be6e2d62dcb377d7b68b308</guid>
+            <pubDate>Tue, 21 Apr 2020 20:51:44 GMT</pubDate>
+            <description><![CDATA[Answer live at http://3b1b.co/live<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/thanks<br />
+<br />
+------------------<br />
+The live question setup with stats on-screen is powered by Itempool.<br />
+https://itempool.com/<br />
+<br />
+The graphing calculator used here is Desmos.<br />
+https://www.desmos.com/<br />
+<br />
+Curious about other animations?<br />
+https://www.3blue1brown.com/faq#manim<br />
+<br />
+Music by Vincent Rubinetti.<br />
+Download the music on Bandcamp:<br />
+https://vincerubinetti.bandcamp.com/album/the-music-of-3blue1brown<br />
+<br />
+<br/><img src="https://thumbnails.lbry.com/yBw67Fb31Cs" width="400" alt="Trigonometry fundamentals | Lockdown math ep. 2" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/yBw67Fb31Cs" length="0" type="image//yBw67Fb31Cs"/>
+        </item>
+        <item>
+            <title><![CDATA[The simpler quadratic formula | Lockdown math ep. 1 (video)]]></title>
+            <link>lbry://the-simpler-quadratic-formula-lockdown#407c7e9fe95a9b1cfea6e4de857d3e62b6bce933</link>
+            <guid>407c7e9fe95a9b1cfea6e4de857d3e62b6bce933</guid>
+            <pubDate>Fri, 17 Apr 2020 20:04:24 GMT</pubDate>
+            <description><![CDATA[Another view on the quadratic formula.<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/thanks<br />
+<br />
+------------------<br />
+<br />
+Music by Vincent Rubinetti.<br />
+Download the music on Bandcamp:<br />
+https://vincerubinetti.bandcamp.com/album/the-music-of-3blue1brown<br />
+<br />
+Stream the music on Spotify:<br />
+https://open.spotify.com/album/1dVyjwS8FBqXhRunaG5W5u<br />
+<br />
+If you want to contribute translated subtitles or to help review those that have already been made by others and need approval, you can click th<br/><img src="https://thumbnails.lbry.com/MHXO86wKeDY" width="400" alt="The simpler quadratic formula | Lockdown math ep. 1" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/MHXO86wKeDY" length="0" type="image//MHXO86wKeDY"/>
+        </item>
+        <item>
+            <title><![CDATA[Lockdown math announcement (video)]]></title>
+            <link>lbry://lockdown-math-announcement#0f0bb8c60a2a93078f8bc8403bdb4e848ba06a71</link>
+            <guid>0f0bb8c60a2a93078f8bc8403bdb4e848ba06a71</guid>
+            <pubDate>Thu, 16 Apr 2020 21:25:09 GMT</pubDate>
+            <description><![CDATA[Beginning tomorrow.  Stay tuned!<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/thanks<br />
+<br />
+------------------<br />
+<br />
+Music by Vincent Rubinetti.<br />
+Download the music on Bandcamp:<br />
+https://vincerubinetti.bandcamp.com/album/the-music-of-3blue1brown<br />
+<br />
+Stream the music on Spotify:<br />
+https://open.spotify.com/album/1dVyjwS8FBqXhRunaG5W5u<br />
+<br />
+If you want to contribute translated subtitles or to help review those that have already been made by others and need approval, you can cli<br/><img src="https://thumbnails.lbry.com/ppWPuXsnf1Q" width="400" alt="Lockdown math announcement" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/ppWPuXsnf1Q" length="0" type="image//ppWPuXsnf1Q"/>
+        </item>
+        <item>
+            <title><![CDATA[Why “probability of 0” does not mean “impossible” | Probabilities of probabilities, part 2 (video)]]></title>
+            <link>lbry://why-probability-of-0-does-not-mean#c8a7080dabe73b4bb5c1d0317b1ff71f4d4cb253</link>
+            <guid>c8a7080dabe73b4bb5c1d0317b1ff71f4d4cb253</guid>
+            <pubDate>Sun, 12 Apr 2020 15:41:30 GMT</pubDate>
+            <description><![CDATA[An introduction to probability density functions<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/thanks<br />
+<br />
+Curious about measure theory?  This does require some background in real analysis, but if you want to dig in, here is a textbook by the always great Terence Tao.<br />
+https://terrytao.files.wordpress.com/2011/01/measure-book1.pdf<br />
+<br />
+Also, for the real analysis buffs among you, there was one statement I made in this video that is a rather nice puzzle.  Namely, if the p<br/><img src="https://thumbnails.lbry.com/ZA4JkHKZM50" width="400" alt="Why “probability of 0” does not mean “impossible” | Probabilities of probabilities, part 2" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/ZA4JkHKZM50" length="0" type="image//ZA4JkHKZM50"/>
+        </item>
+        <item>
+            <title><![CDATA[Simulating an epidemic (video)]]></title>
+            <link>lbry://simulating-an-epidemic#3b2d410ac6fe46b49a3b6d20ebfc3e147fdabab4</link>
+            <guid>3b2d410ac6fe46b49a3b6d20ebfc3e147fdabab4</guid>
+            <pubDate>Fri, 27 Mar 2020 19:47:30 GMT</pubDate>
+            <description><![CDATA[Experiments with toy SIR models<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/sir-thanks<br />
+<br />
+Simulations by Harry Stevens at the Washington Post:<br />
+https://www.washingtonpost.com/graphics/2020/world/corona-simulator/<br />
+<br />
+Simulations by Kevin Simler at Melting Asphalt:<br />
+https://meltingasphalt.com/interactive/outbreak/<br />
+<br />
+Excellent visualization of each country's current growth from Minutephysics and Aatish Bhatia:<br />
+https://www.youtube.com/watch?v=54XLXg4fYsc<br />
+<br />
+If you want to h<br/><img src="https://thumbnails.lbry.com/gxAaO2rsdIs" width="400" alt="Simulating an epidemic" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/gxAaO2rsdIs" length="0" type="image//gxAaO2rsdIs"/>
+        </item>
+        <item>
+            <title><![CDATA[Which rating is better, mathematically speaking? | Probabilities of probabilities, part 1 (video)]]></title>
+            <link>lbry://which-rating-is-better-mathematically#0b19c2293ab393c36bf249e89807776da43217de</link>
+            <guid>0b19c2293ab393c36bf249e89807776da43217de</guid>
+            <pubDate>Sun, 15 Mar 2020 18:28:16 GMT</pubDate>
+            <description><![CDATA[An early draft of part 2 for supporters: https://www.patreon.com/posts/34908022<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/beta1-thanks<br />
+<br />
+John Cook post: https://www.johndcook.com/blog/2011/09/27/bayesian-amazon/<br />
+<br />
+------------------<br />
+<br />
+These animations are largely made using manim, a scrappy open-source python library:  https://github.com/3b1b/manim<br />
+<br />
+If you want to check it out, I feel compelled to warn you that it's not the most well-documented tool, and it has ma<br/><img src="https://thumbnails.lbry.com/8idr1WZ1A7Q" width="400" alt="Which rating is better, mathematically speaking? | Probabilities of probabilities, part 1" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/8idr1WZ1A7Q" length="0" type="image//8idr1WZ1A7Q"/>
+        </item>
+        <item>
+            <title><![CDATA[Exponential growth and epidemics (video)]]></title>
+            <link>lbry://exponential-growth-and-epidemics#7e2a50045910d59baa58b1207171588a875a89ce</link>
+            <guid>7e2a50045910d59baa58b1207171588a875a89ce</guid>
+            <pubDate>Sun, 08 Mar 2020 16:58:19 GMT</pubDate>
+            <description><![CDATA[A good time for a primer on exponential and logistic growth, no?<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/covid-thanks<br />
+<br />
+Data source: https://www.worldometers.info/coronavirus/coronavirus-cases/#total-cases<br />
+<br />
+Some have (quite rightfully) commented on how you shouldn't look at the R^2 of linear regressions on cumulative data since even for completely random changes each total is not at all independent of the last.  Since the derivative of an exponential should a<br/><img src="https://thumbnails.lbry.com/Kas0tIxDvrg" width="400" alt="Exponential growth and epidemics" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/Kas0tIxDvrg" length="0" type="image//Kas0tIxDvrg"/>
+        </item>
+        <item>
+            <title><![CDATA[The quick proof of Bayes' theorem (video)]]></title>
+            <link>lbry://the-quick-proof-of-bayes-theorem#634335d6bdaf04516ea61b90ede3dfea76be4a1a</link>
+            <guid>634335d6bdaf04516ea61b90ede3dfea76be4a1a</guid>
+            <pubDate>Sun, 22 Dec 2019 14:45:25 GMT</pubDate>
+            <description><![CDATA[Including some added words on independence.<br />
+Main video: https://youtu.be/HZGCoVF3YvM<br />
+Brought to you by you: http://3b1b.co/bayes-thanks<br />
+<br />
+------------------<br />
+<br />
+These animations are largely made using manim, a scrappy open-source python library:  https://github.com/3b1b/manim<br />
+<br />
+If you want to check it out, I feel compelled to warn you that it's not the most well-documented tool, and it has many other quirks you might expect in a library someone wrote with only their own use in mind.<br />
+<br />
+Music by<br/><img src="https://thumbnails.lbry.com/U_85TaXbeIo" width="400" alt="The quick proof of Bayes' theorem" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/U_85TaXbeIo" length="0" type="image//U_85TaXbeIo"/>
+        </item>
+        <item>
+            <title><![CDATA[Bayes theorem, and making probability intuitive (video)]]></title>
+            <link>lbry://bayes-theorem-and-making-probability#6d90bea2d7659e73ab70cbf82bef63adf5efc848</link>
+            <guid>6d90bea2d7659e73ab70cbf82bef63adf5efc848</guid>
+            <pubDate>Sun, 22 Dec 2019 14:31:56 GMT</pubDate>
+            <description><![CDATA[Perhaps the most important formula in probability.<br />
+Brought to you by you: http://3b1b.co/bayes-thanks<br />
+The quick proof: https://youtu.be/U_85TaXbeIo<br />
+<br />
+Interactive made by Reddit user Thoggalluth: https://nskobelevs.github.io/p5js/BayesTheorem/<br />
+<br />
+The study with Steve:<br />
+https://science.sciencemag.org/content/185/4157/1124<br />
+http://www.its.caltech.edu/~camerer/Ec101/JudgementUncertainty.pdf<br />
+<br />
+You can read more about Kahneman and Tversky's work in Thinking Fast and Slow, or in one of my favorite books, Th<br/><img src="https://thumbnails.lbry.com/HZGCoVF3YvM" width="400" alt="Bayes theorem, and making probability intuitive" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/HZGCoVF3YvM" length="0" type="image//HZGCoVF3YvM"/>
+        </item>
+        <item>
+            <title><![CDATA[Q&A with Grant (3blue1brown), windy walk edition (video)]]></title>
+            <link>lbry://q-a-with-grant-3blue1brown-windy-walk#3443d3e7b4a5c04365a13262c84fad69948494f9</link>
+            <guid>3443d3e7b4a5c04365a13262c84fad69948494f9</guid>
+            <pubDate>Sat, 23 Nov 2019 01:00:14 GMT</pubDate>
+            <description><![CDATA[To mark 2^21 subscribers, in a style totally not stolen from Veritasium.<br />
+Ties, shirts, etc. http://3b1b.co/store<br />
+Links to things that came up below.<br />
+<br />
+The Bit Player<br />
+https://thebitplayer.com/<br />
+<br />
+The Idea Factory<br />
+https://amazon.com/dp/0143122797<br />
+<br />
+The Information, A History, A Theory, A Flood<br />
+https://amazon.com/dp/1400096235<br />
+<br />
+You can read about Lorenz in "Chaos", also by James Gleick<br />
+https://amazon.com/dp/0143113453<br />
+<br />
+Anthropocene reviewed<br />
+https://www.wnycstudios.org/podcasts/anthropocene-reviewed<br />
+<br />
+Ha<br/><img src="https://thumbnails.lbry.com/Agbh95KyWxY" width="400" alt="Q&A with Grant (3blue1brown), windy walk edition" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/Agbh95KyWxY" length="0" type="image//Agbh95KyWxY"/>
+        </item>
+        <item>
+            <title><![CDATA[Why do prime numbers make these spirals? (video)]]></title>
+            <link>lbry://why-do-prime-numbers-make-these-spirals#8b50c0d4e167da8be885de80493833e840d578b0</link>
+            <guid>8b50c0d4e167da8be885de80493833e840d578b0</guid>
+            <pubDate>Tue, 08 Oct 2019 17:02:51 GMT</pubDate>
+            <description><![CDATA[A story of the value in mathematical play.<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/spiral-thanks<br />
+<br />
+Based on this Math Stack Exchange post:<br />
+https://math.stackexchange.com/questions/885879/meaning-of-rays-in-polar-plot-of-prime-numbers/885894<br />
+<br />
+Want to learn more about rational approximations?  See this Mathologer video.<br />
+https://youtu.be/CaasbfdJdJg<br />
+<br />
+Also, if you haven't heard of Ulam Spirals, you may enjoy this Numberphile video:<br />
+https://youtu.be/iFuR97YcSLM<br />
+<br />
+Di<br/><img src="https://thumbnails.lbry.com/EK32jo7i5LQ" width="400" alt="Why do prime numbers make these spirals?" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/EK32jo7i5LQ" length="0" type="image//EK32jo7i5LQ"/>
+        </item>
+        <item>
+            <title><![CDATA[This problem seems hard, then it doesn't, but it really is (video)]]></title>
+            <link>lbry://this-problem-seems-hard-then-it-doesn-t#73f1df9f383a21f788d0a4ff04fca84f811c692b</link>
+            <guid>73f1df9f383a21f788d0a4ff04fca84f811c692b</guid>
+            <pubDate>Sun, 04 Aug 2019 17:03:51 GMT</pubDate>
+            <description><![CDATA[The famous (infamous?) Problem 2 on the 2011 IMO<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/windmillthanks<br />
+<br />
+You can find data for past IMO results here:<br />
+https://www.imo-official.org/<br />
+<br />
+The full list of problems considered for the IMO that year, together with their solutions, can be found here:<br />
+https://www.imo-official.org/problems/IMO2011SL.pdf<br />
+<br />
+...<br />
+https://www.youtube.com/watch?v=M64HUIJFTZM<br/><img src="https://thumbnails.lbry.com/M64HUIJFTZM" width="400" alt="This problem seems hard, then it doesn't, but it really is" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/M64HUIJFTZM" length="0" type="image//M64HUIJFTZM"/>
+        </item>
+        <item>
+            <title><![CDATA[Understanding e to the i pi in 3.14 minutes | DE5 (video)]]></title>
+            <link>lbry://understanding-e-to-the-i-pi-in-3-14#beab4a85b6fb7e4d6dfa9fb227b9fb875dc699c7</link>
+            <guid>beab4a85b6fb7e4d6dfa9fb227b9fb875dc699c7</guid>
+            <pubDate>Sun, 07 Jul 2019 14:08:18 GMT</pubDate>
+            <description><![CDATA[Euler's formula intuition from relating velocities to positions.<br />
+Home page: https://www.3blue1brown.com<br />
+Yeah yeah, the runtime is 4:08, but it's 3.14 minutes to the conclusion.<br />
+<br />
+Not familiar with the calculus referenced in this video?  Try taking a look at this one:<br />
+https://youtu.be/m2MIpDrF7Es<br />
+<br />
+Another perspective on this formula, from Mathologer:<br />
+https://youtu.be/-dhHrg-KbJ0<br />
+<br />
+...<br />
+https://www.youtube.com/watch?v=v0YEaeIClKY<br/><img src="https://thumbnails.lbry.com/v0YEaeIClKY" width="400" alt="Understanding e to the i pi in 3.14 minutes | DE5" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/v0YEaeIClKY" length="0" type="image//v0YEaeIClKY"/>
+        </item>
+        <item>
+            <title><![CDATA[Pure Fourier series animations for 12 oddly satisfying minutes (video)]]></title>
+            <link>lbry://pure-fourier-series-animations-for-12#9547b58c89e44329a498d14b60333db1d0b9df9a</link>
+            <guid>9547b58c89e44329a498d14b60333db1d0b9df9a</guid>
+            <pubDate>Wed, 03 Jul 2019 04:05:19 GMT</pubDate>
+            <description><![CDATA[Because why not?<br />
+Learn the math behind this: https://youtu.be/r6sGWTCMz2k<br />
+<br />
+If you're curious about the number of vectors used for each animation: <br />
+- Eighth note: 100<br />
+- Sigma: 200<br />
+- Britain: 500<br />
+- Fourier drawing: 300<br />
+- Nail and Gear: 200<br />
+- Treble clef: 100<br />
+...<br />
+https://www.youtube.com/watch?v=-qgreAUpPwM<br/><img src="https://thumbnails.lbry.com/-qgreAUpPwM" width="400" alt="Pure Fourier series animations for 12 oddly satisfying minutes" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/-qgreAUpPwM" length="0" type="image//-qgreAUpPwM"/>
+        </item>
+        <item>
+            <title><![CDATA[But what is a Fourier series? From heat flow to circle drawings | DE4 (video)]]></title>
+            <link>lbry://but-what-is-a-fourier-series-from-heat#6a8db1f13333f171a3a8f1f57cb88d3d7c4d9bda</link>
+            <guid>6a8db1f13333f171a3a8f1f57cb88d3d7c4d9bda</guid>
+            <pubDate>Sun, 30 Jun 2019 14:50:20 GMT</pubDate>
+            <description><![CDATA[Fourier series, from the heat equation to sines to cycles.<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/de4thanks<br />
+<br />
+If you're looking for more Fourier Series content online, including code to play with to create this kind of animation yourself, check out these posts:<br />
+<br />
+Mathologer<br />
+https://youtu.be/qS4H6PEcCCA<br />
+<br />
+The Coding Train<br />
+...<br />
+https://www.youtube.com/watch?v=r6sGWTCMz2k<br/><img src="https://thumbnails.lbry.com/r6sGWTCMz2k" width="400" alt="But what is a Fourier series? From heat flow to circle drawings | DE4" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/r6sGWTCMz2k" length="0" type="image//r6sGWTCMz2k"/>
+        </item>
+        <item>
+            <title><![CDATA[Solving the heat equation | Differential equations, chapter 3 (video)]]></title>
+            <link>lbry://solving-the-heat-equation-differential#a608c22ed037aba0ffc0cbfefeb7e2291ef2aed7</link>
+            <guid>a608c22ed037aba0ffc0cbfefeb7e2291ef2aed7</guid>
+            <pubDate>Sun, 16 Jun 2019 16:31:00 GMT</pubDate>
+            <description><![CDATA[(Sine waves / boundary condition) + linearity + Fourier = Solution<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/de3thanks<br />
+<br />
+More about the heat equation, with a derivation in terms of slope corresponding to heat flow from MIT OCW:<br />
+https://ocw.mit.edu/courses/mathematics/18-303-linear-partial-differential-equations-fall-2006/lecture-notes/heateqni.pdf<br />
+<br />
+If you want to learn more about Fourier series, here are a few great videos/posts which I think you'll enjoy:<br />
+Matho<br/><img src="https://thumbnails.lbry.com/ToIXSwZ1pJU" width="400" alt="Solving the heat equation | Differential equations, chapter 3" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/ToIXSwZ1pJU" length="0" type="image//ToIXSwZ1pJU"/>
+        </item>
+        <item>
+            <title><![CDATA[But what is a partial differential equation?  | Overview of differential equations, chapter 2 (video)]]></title>
+            <link>lbry://but-what-is-a-partial-differential#a695c5a4c5d86915aaa29eeb356e75783502d516</link>
+            <guid>a695c5a4c5d86915aaa29eeb356e75783502d516</guid>
+            <pubDate>Sun, 21 Apr 2019 16:53:21 GMT</pubDate>
+            <description><![CDATA[The heat equation, as an introductory PDE.<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/de2thanks<br />
+<br />
+Infinite powers, by Steven Strogatz:<br />
+https://www.amazon.com/Infinite-Powers-Calculus-Reveals-Universe/dp/1328879984<br />
+<br />
+Typo corrections:<br />
+- At 1:33, it should be “Black-Scholes”<br />
+- At 16:21 it should read "scratch an itch".<br />
+...<br />
+https://www.youtube.com/watch?v=ly4S0oi3Yz8<br/><img src="https://thumbnails.lbry.com/ly4S0oi3Yz8" width="400" alt="But what is a partial differential equation?  | Overview of differential equations, chapter 2" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/ly4S0oi3Yz8" length="0" type="image//ly4S0oi3Yz8"/>
+        </item>
+        <item>
+            <title><![CDATA[Overview of differential equations | Chapter 1 (video)]]></title>
+            <link>lbry://overview-of-differential-equations#e6232556f4ec222a545f9cbebe7bc793afab8d25</link>
+            <guid>e6232556f4ec222a545f9cbebe7bc793afab8d25</guid>
+            <pubDate>Sun, 31 Mar 2019 15:15:50 GMT</pubDate>
+            <description><![CDATA[How do you study what cannot be solved?<br />
+Home page: https://3blue1brown.com/<br />
+Brought to you by you: http://3b1b.co/de1thanks<br />
+Need to brush up on calculus?  https://youtu.be/WUvTyaaNkzM<br />
+<br />
+Error correction: At 6:27, the upper equation should have g/L instead of L/g.<br />
+<br />
+Steven Strogatz NYT article on the math of love:<br />
+https://opinionator.blogs.nytimes.com/2009/05/26/guest-column-loves-me-loves-me-not-do-the-math/<br />
+<br />
+...<br />
+https://www.youtube.com/watch?v=p_di4Zn4wz4<br/><img src="https://thumbnails.lbry.com/p_di4Zn4wz4" width="400" alt="Overview of differential equations | Chapter 1" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/p_di4Zn4wz4" length="0" type="image//p_di4Zn4wz4"/>
+        </item>
+        <item>
+            <title><![CDATA[Cramer's rule, explained geometrically | Essence of linear algebra, chapter 12 (video)]]></title>
+            <link>lbry://cramer-s-rule-explained-geometrically#552deeb807ea6e5bf372348dc917134d856ea11d</link>
+            <guid>552deeb807ea6e5bf372348dc917134d856ea11d</guid>
+            <pubDate>Sun, 17 Mar 2019 04:35:22 GMT</pubDate>
+            <description><![CDATA[This rule seems random to many students, but it has a beautiful reason for being true.<br />
+Home page: https://www.3blue1brown.com/<br />
+Brought to you by you: http://3b1b.co/cramer-thanks<br />
+Full series: http://3b1b.co/eola<br />
+<br />
+----<br />
+<br />
+If you want to contribute translated subtitles or to help review those that have already been made by others and need approval, you can click the gear icon in the video and go to subtitles/cc, then "add subtitles/cc".  I really appreciate those who do this, as it helps make the le<br/><img src="https://thumbnails.lbry.com/jBsC34PxzoM" width="400" alt="Cramer's rule, explained geometrically | Essence of linear algebra, chapter 12" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/jBsC34PxzoM" length="0" type="image//jBsC34PxzoM"/>
+        </item>
+        <item>
+            <title><![CDATA[How colliding blocks act like a beam of light...to compute pi. (video)]]></title>
+            <link>lbry://how-colliding-blocks-act-like-a-beam-of#18a3876165432b4ac232ef47348ee72bf85f8f91</link>
+            <guid>18a3876165432b4ac232ef47348ee72bf85f8f91</guid>
+            <pubDate>Sun, 03 Feb 2019 16:23:07 GMT</pubDate>
+            <description><![CDATA[The third and final part of the block collision sequence.<br />
+Part 1: https://youtu.be/HEfHFsfGXjs<br />
+Part 2: https://youtu.be/jsYwFizhncE<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/clacks-thanks<br />
+<br />
+Error correction: I wrote the answer as floor(pi/theta), when really it should be ceiling(pi/theta) - 1 t account for values of theta perfectly dividing pi.  For example, the case of equal masses gives an angle of pi/4, and 3 total clacks.<br />
+<br />
+This beautiful result, and the solu<br/><img src="https://thumbnails.lbry.com/brU5yLm9DZM" width="400" alt="How colliding blocks act like a beam of light...to compute pi." />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/brU5yLm9DZM" length="0" type="image//brU5yLm9DZM"/>
+        </item>
+        <item>
+            <title><![CDATA[So why do colliding blocks compute pi? (video)]]></title>
+            <link>lbry://so-why-do-colliding-blocks-compute-pi#45fa82c9d787dbee8b4ee2a98649a56fe3ba47ce</link>
+            <guid>45fa82c9d787dbee8b4ee2a98649a56fe3ba47ce</guid>
+            <pubDate>Sun, 20 Jan 2019 16:40:38 GMT</pubDate>
+            <description><![CDATA[Part 1: https://youtu.be/HEfHFsfGXjs<br />
+Part 3: https://youtu.be/brU5yLm9DZM<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/clacks-thanks <br />
+<br />
+Many of you shared solutions, attempts, and simulations with me this last week.  I loved it!  Y'all are the best.  Here are just two of my favorites.<br />
+By a channel STEM cell: https://youtu.be/ils7GZqp_iE<br />
+By Doga Kurkcuoglu: http://bilimneguzellan.net/bouncing-cubes-and-%CF%80-3blue1brown/<br />
+<br />
+And here's a lovely interactive built by Gi<br/><img src="https://thumbnails.lbry.com/jsYwFizhncE" width="400" alt="So why do colliding blocks compute pi?" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/jsYwFizhncE" length="0" type="image//jsYwFizhncE"/>
+        </item>
+        <item>
+            <title><![CDATA[The most unexpected answer to a counting puzzle (video)]]></title>
+            <link>lbry://the-most-unexpected-answer-to-a-counting#4faa95adfc9281963c0c653bc52a006105f2dab6</link>
+            <guid>4faa95adfc9281963c0c653bc52a006105f2dab6</guid>
+            <pubDate>Sun, 13 Jan 2019 16:12:47 GMT</pubDate>
+            <description><![CDATA[If this doesn't blow your mind, I don't know what will.<br />
+Part 2: https://youtu.be/jsYwFizhncE<br />
+Part 3: https://youtu.be/brU5yLm9DZM<br />
+Brought to you by you: http://3b1b.co/clacks-thanks<br />
+<br />
+New to this channel?  It's all about teaching math visually.  Take a look and see if there's anything you'd like to learn.<br />
+<br />
+NY Times blog post about this problem:<br />
+https://wordplay.blogs.nytimes.com/2014/03/10/pi/<br />
+<br />
+...<br />
+https://www.youtube.com/watch?v=HEfHFsfGXjs<br/><img src="https://thumbnails.lbry.com/HEfHFsfGXjs" width="400" alt="The most unexpected answer to a counting puzzle" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/HEfHFsfGXjs" length="0" type="image//HEfHFsfGXjs"/>
+        </item>
+        <item>
+            <title><![CDATA[But WHY is a sphere's surface area four times its shadow? (video)]]></title>
+            <link>lbry://but-why-is-a-sphere-s-surface-area-four#a297aadf6ebda74151861de28329358edd143f1f</link>
+            <guid>a297aadf6ebda74151861de28329358edd143f1f</guid>
+            <pubDate>Sun, 02 Dec 2018 20:08:11 GMT</pubDate>
+            <description><![CDATA[The formula is no mere coincidence.<br />
+Store: http://3b1b.co/store<br />
+Home page: https://www.3blue1brown.com<br />
+Special thanks: http://3b1b.co/sphere-thanks<br />
+<br />
+Discussion on Reddit: https://www.reddit.com/r/3Blue1Brown/comments/a2gqo0/but_why_is_a_spheres_surface_area_four_times_its/<br />
+<br />
+The first proof goes back to Greek times, due to Archimedes, who was charmed by the fact that a sphere has 2/3 the volume of a cylinder encompassing it, and 2/3 the surface area as well (if you consider the caps).  Check out <br/><img src="https://thumbnails.lbry.com/GNcFjFmqEc8" width="400" alt="But WHY is a sphere's surface area four times its shadow?" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/GNcFjFmqEc8" length="0" type="image//GNcFjFmqEc8"/>
+        </item>
+        <item>
+            <title><![CDATA[Sneaky Topology (The Borsuk-Ulam theorem) (video)]]></title>
+            <link>lbry://sneaky-topology#1f761e4d1251bfd15ba0e694005a0e2c7dc0c3bd</link>
+            <guid>1f761e4d1251bfd15ba0e694005a0e2c7dc0c3bd</guid>
+            <pubDate>Sun, 18 Nov 2018 14:09:20 GMT</pubDate>
+            <description><![CDATA[Solving a discrete math puzzle using topology.<br />
+Home page: https://www.3blue1brown.com<br />
+Brought to you by you: http://3b1b.co/borsuk-thanks<br />
+<br />
+Want more fair division math fun?  Check out this Mathologer video<br />
+https://youtu.be/7s-YM-kcKME<br />
+(Seriously, Mathologer is great)<br />
+<br />
+These videos are supported by the community.<br />
+https://www.patreon.com/3blue1brown<br />
+...<br />
+https://www.youtube.com/watch?v=yuVqxCSsE7c<br/><img src="https://thumbnails.lbry.com/yuVqxCSsE7c" width="400" alt="Sneaky Topology (The Borsuk-Ulam theorem)" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/yuVqxCSsE7c" length="0" type="image//yuVqxCSsE7c"/>
+        </item>
+        <item>
+            <title><![CDATA[Visualizing turbulence (video)]]></title>
+            <link>lbry://visualizing-turbulence-with-a-home-demo#76e6326d9524ca221a952834b57bc3680705ef6f</link>
+            <guid>76e6326d9524ca221a952834b57bc3680705ef6f</guid>
+            <pubDate>Wed, 07 Nov 2018 20:20:32 GMT</pubDate>
+            <description><![CDATA[Here we look at some of the order amidst chaos in turbulence.<br />
+Vortex rings with Physics Girl: https://youtu.be/N7d_RWyOv20<br />
+Brought to you by you: http://3b1b.co/turbulence-thanks<br />
+Home page: https://www.3blue1brown.com<br />
+<br />
+Thanks to Dan Walsh for many great ideas, and thanks to Mike Hansen for many helpful conversations.<br />
+<br />
+Error correction: I meant to describe Kolmogorov as a “20th-century mathematician” not “19th-century”.  Whoops!  I think during the narration I must have made the classic 1900s vs.<br/><img src="https://thumbnails.lbry.com/_UoTTq651dE" width="400" alt="Visualizing turbulence" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/_UoTTq651dE" length="0" type="image//_UoTTq651dE"/>
+        </item>
+        <item>
+            <title><![CDATA[Quaternions and 3d rotation, explained interactively (video)]]></title>
+            <link>lbry://quaternions-and-3d-rotation-explained#501be40df2f9fdaecd21369b107bcffc58c7d14d</link>
+            <guid>501be40df2f9fdaecd21369b107bcffc58c7d14d</guid>
+            <pubDate>Fri, 26 Oct 2018 16:31:52 GMT</pubDate>
+            <description><![CDATA[Go experience the explorable videos: https://eater.net/quaternions<br />
+Ben Eater's channel: https://www.youtube.com/user/eaterbc<br />
+Brought to you by you: http://3b1b.co/quaternion-explorable-thanks<br />
+<br />
+Previous video on Quaternions:<br />
+https://youtu.be/d4EgbgTm0Bg<br />
+<br />
+Nice explanation of Gimbal Lock:<br />
+https://youtu.be/zc8b2Jo7mno<br />
+<br />
+...<br />
+https://www.youtube.com/watch?v=zjMuIxRvygQ<br/><img src="https://thumbnails.lbry.com/zjMuIxRvygQ" width="400" alt="Quaternions and 3d rotation, explained interactively" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/zjMuIxRvygQ" length="0" type="image//zjMuIxRvygQ"/>
+        </item>
+        <item>
+            <title><![CDATA[Visualizing quaternions (4d numbers) with stereographic projection (video)]]></title>
+            <link>lbry://what-are-quaternions-and-how-do-you#bca507c72f9f9b49b1a722ff674783e163ac5541</link>
+            <guid>bca507c72f9f9b49b1a722ff674783e163ac5541</guid>
+            <pubDate>Thu, 06 Sep 2018 14:59:33 GMT</pubDate>
+            <description><![CDATA[How to think about this 4d number system in our 3d space.<br />
+Brought to you by you: http://3b1b.co/quaternion-thanks<br />
+Interact with these visuals: http://3imaginary1real.com<br />
+<br />
+Quanta article on quaternions:<br />
+https://www.quantamagazine.org/the-strange-numbers-that-birthed-modern-algebra-20180906/<br />
+<br />
+The math of Alice in Wonderland:<br />
+https://www.newscientist.com/article/mg20427391-600-alices-adventures-in-algebra-wonderland-solved/<br />
+<br />
+...<br />
+https://www.youtube.com/watch?v=d4EgbgTm0Bg<br/><img src="https://thumbnails.lbry.com/d4EgbgTm0Bg" width="400" alt="Visualizing quaternions (4d numbers) with stereographic projection" />]]></description>
+            <enclosure url="https://thumbnails.lbry.com/d4EgbgTm0Bg" length="0" type="image//d4EgbgTm0Bg"/>
+        </item>
+    </channel>
+</rss>
