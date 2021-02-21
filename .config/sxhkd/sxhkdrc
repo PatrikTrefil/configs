@@ -8,7 +8,7 @@ super + l
     setxkbmap us && pkill -RTMIN+1 dwmblocks && $LOCK
 # use internal display only
 alt + shift + i
-    xrandr --output "e-DP1" --primary --auto --output "DP-1" --off --output "DP-3" --off
+    xrandr --output "e-DP1" --primary --mode 1920x1080 --output "DP-1" --off --output "DP-3" --off
 super + shift + r
     ~/.scripts/dmenu-reboot
 super + shift + x
@@ -37,7 +37,7 @@ super + shift + e
     ~/.scripts/dmenu-emoji/dmenu-emoji.sh
 # find contact
 super + c 
-    ~/.scripts/dmenu-khard-contacts/scont
+    ~/Code/dmenu-vcard/script.py
 # mute notifications
 super + m
     dunstctl set-paused toggle && pkill -RTMIN+5 dwmblocks
@@ -46,7 +46,7 @@ super + g
     bw generate --number --uppercase --lowercase --special | xclip -selection clipboard
 # toggle vpn
 super + v
-	~/.scripts/vpn && pkill -RTMIN+3 dwmblocks
+	~/.scripts/vpn && notify-send -t 3000 "VPN Toggled" && pkill -RTMIN+3 dwmblocks
 # toggle safeeyes
 super + b
     ~/.scripts/safeeyes-toggle && pkill -RTMIN+4 dwmblocks
@@ -63,8 +63,10 @@ super + a
 super + t
     search-window "nvim $HOME/Mega/Other/Todo/todo.txt"
 # password selector
-super + p
-   setsid ~/Code/dmenu-bitwarden/dmenu-bitwarden.py
+super + p ; p
+   setsid ~/Code/dmenu-bitwarden/dmenu_bitwarden.py -n
+super + p ; u
+   setsid ~/Code/dmenu-bitwarden/dmenu_bitwarden.py -u
 # quicknotes
 super + q
     search-window "quicknotes_wiki"
@@ -79,6 +81,8 @@ super + n
     search-window "$HOME/.scripts/search-edit --gui"
 super + shift + n
     search-window "$HOME/.scripts/search-edit --reuse-code"
+super + u
+    search-window "search-edit --gnvim"
 super + Return
     $TERMINAL
 alt + p
