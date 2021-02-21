@@ -27,15 +27,15 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Install fzf
 Plug 'lervag/vimtex' " <Space> + ll => live preview
 " Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Completion
-" Linting
-Plug 'vim-syntastic/syntastic'
 " Productivity
-Plug 'dbeniamine/todo.txt-vim'
+Plug 'vim-syntastic/syntastic' " Linting
+Plug 'dbeniamine/todo.txt-vim' " To-do's
 Plug 'tpope/vim-surround' " Surround X with a character
 Plug 'scrooloose/nerdcommenter' " <Leader>c + <space> toggle comment
 Plug 'svermeulen/vim-cutlass' " Cut by pressing X, instead of d
-Plug 'Townk/vim-autoclose' " Matching brackets
+Plug 'Raimondi/delimitMate' " Matching brackets
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'easymotion/vim-easymotion' " Better motions
 "" Snippets
 Plug 'SirVer/ultisnips' " Snippet engine (triggered from coc by <tab>)
 Plug 'honza/vim-snippets' " Snippets from Honza
@@ -44,18 +44,10 @@ Plug 'mattn/emmet-vim' " HTML Snippets Press , , (comma + comma)
 Plug 'sheerun/vim-polyglot' " Syntax highlighting
 Plug 'ap/vim-css-color' " See color previews
 Plug 'junegunn/rainbow_parentheses.vim' " Rainbow paratheses
-"" Git
-Plug 'airblade/vim-gitgutter' " Manage git directly from vim
-Plug 'tpope/vim-fugitive' " Git commands in Vim
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Rice
 Plug 'ryanoasis/vim-devicons' " Nice icons
 Plug 'vim-airline/vim-airline' " Status Line
-Plug 'vim-airline/vim-airline-themes' " Status Line Themes
-" Themes "
-Plug 'cocopon/iceberg.vim' 
-Plug 'arzg/vim-colors-xcode' 
-Plug 'kaicataldo/material.vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
 " Initialize plugin system " {{{
 call plug#end()
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -66,6 +58,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 " }}}
 "}}}
 " General " {{{
+colorscheme dracula
 let mapleader=","
 let maplocalleader=" "
 set cursorline "Highlights current line
@@ -95,21 +88,15 @@ set softtabstop=2 " when using Tab/Backspace add/delete whole tabs not a single 
 set shiftwidth=2 " determines how much a line is moved when using >>,<<,== (should be the same as tabstop)
 set hidden " ability to jump to new buffer without saving
 "}}}
-autocmd BufWritePost *sxhkdrc !pkill -SIGUSR1 sxhkd
-" Update binds when sxhkdrc is updated.
+" Auto Commands {{{
+autocmd BufWritePost *sxhkdrc !pkill -SIGUSR1 sxhkd 
+" Update binds when sxhkdrc is updated. (don't join lines)
 autocmd BufWritePost *.py Format " Auto-format python files
-" Lin" numbers{{{
+"}}}
+" Line numbers{{{
 set number relativenumber
 set nu rnu
 "}}}
-"}}}
-" Theme{{{
-"colorscheme onehalfdark
-"colorscheme xcodedarkhc
-"colorscheme iceberg
-colorscheme dracula
-let g:airline_theme='deus'
-"let g:airline_theme='dracula'"}}}
 " Ruler " {{{
 set ruler " display position in a file
 set autoread " automatically update file with changes made outside of vim
@@ -212,13 +199,19 @@ let g:vimwiki_global_ext = 0 " (don't) create temp wikis
 
   let wiki_2 = {}
   let wiki_2.path = '~/Mega/Documents/Other/quicknotes/'
-  let wiki_2.path_html = '~/Mega/Documents/Other/quicknotes_html/'
-  let wiki_2.syntax = 'default'
-  let wiki_2.ext = ".wiki"
+  let wiki_2.syntax = 'markdown'
+  let wiki_2.ext = ".md"
   let wiki_2.maxhi = 1 " highlight links leading to empty pages
-  let wiki_2.auto_export = 1
   let wiki_2.auto_diary_index = 1
   let wiki_2.auto_tags = 1
+
+  let wiki_3 = {}
+  let wiki_3.path = '~/Mega/Documents/Other/Notes/'
+  let wiki_3.syntax = 'markdown'
+  let wiki_3.ext = ".md"
+  let wiki_3.maxhi = 1 " highlight links leading to empty pages
+  let wiki_3.auto_diary_index = 1
+  let wiki_3.auto_tags = 1
 
   let g:vimwiki_list = [wiki_1, wiki_2]
 " Colors for Headings and Links
