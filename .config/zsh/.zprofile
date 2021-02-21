@@ -5,7 +5,7 @@ export PAGER='less'
 export EDITOR='nvim'
 export GEDITOR='vscodium'
 export READER='zathura'
-export SCRIPTS='$HOME/.scripts/'
+export SCRIPTS="${HOME}/.scripts/"
 
 # needs to be absolute
 export MUSIC='/home/patriktrefil/Mega/Music/'
@@ -75,6 +75,8 @@ export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
 export LANG=en_US.UTF-8
 
 export CLICOLOR=1
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # FZF
 export FZF_DEFAULT_COMMAND='find .'
