@@ -1,6 +1,5 @@
 # General
 ## Imports
-source ~/.bwsession
 source ~/.config/zsh/ohmyzsh.zsh
 source ~/.config/zsh/alias.zsh
 
