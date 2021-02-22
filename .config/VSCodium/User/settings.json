@@ -1,15 +1,22 @@
 {
   // General
+  "editor.lineNumbers": "relative",
+  "window.zoomLevel": 1,
+  "editor.mouseWheelZoom": true,
+  "editor.renderControlCharacters": true,
+  // Font size
   "editor.fontSize": 18,
   "debug.console.fontSize": 20,
   "markdown.preview.fontSize": 18,
-  "update.mode": "none",
   "terminal.integrated.fontSize": 17,
+  // Don't want update notifications (taken care of by the pkg manager)
+  "update.mode": "none",
+
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "window.zoomLevel": 1,
+  "workbench.startupEditor": "untitled",
+  // hide top bar
   "window.menuBarVisibility": "toggle",
-  "editor.lineNumbers": "relative",
+
   "firefox.executable": "/usr/bin/firefox",
   // When opening a file, `editor.tabSize` and `editor.insertSpaces`
   // will be detected based on the file contents. Set to false to keep
@@ -57,23 +64,21 @@
     "%PDF%"
   ],
   "latex-workshop.synctex.afterBuild.enabled": false,
-  // Vim
+  // Vim Mode
   "vim.easymotion": true,
   "vim.handleKeys": {
-    "<C-d>": false,
+    "<C-d>": true,
     "<C-c>": false,
     "<C-v>": false,
     "<C-x>": false,
     "<C-a>": false,
-    "<C-w>": false
+    "<C-w>": true
   },
   "keyboard.dispatch": "keyCode",
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
   "vim.hlsearch": true,
   "vim.leader": ",",
-  "editor.mouseWheelZoom": true,
-  "editor.renderControlCharacters": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["u"],
