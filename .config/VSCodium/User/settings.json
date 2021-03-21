@@ -4,6 +4,7 @@
   "window.zoomLevel": 1,
   "editor.mouseWheelZoom": true,
   "editor.renderControlCharacters": true,
+  "editor.formatOnSave": true,
   // Font size
   "editor.fontSize": 18,
   "debug.console.fontSize": 20,
@@ -13,7 +14,7 @@
   "update.mode": "none",
 
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.startupEditor": "untitled",
+  "workbench.startupEditor": "newUntitledFile",
   // hide top bar
   "window.menuBarVisibility": "toggle",
 
@@ -43,11 +44,14 @@
   // based on the file contents when `editor.detectIndentation` is true.
   "editor.insertSpaces": true,
 
+  // CSS
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
   // Python
   "python.showStartPage": false,
   "python.defaultInterpreterPath": "/usr/bin/python3",
-  "python.linting.pylintEnabled": false,
-  "python.linting.mypyEnabled": true,
+  "python.linting.pylintEnabled": true,
   // Go
   "go.useLanguageServer": true,
   // Latex
@@ -126,5 +130,13 @@
       "before": ["c"],
       "after": ["\"", "_", "c"]
     }
-  ]
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "sync.autoDownload": false,
+  "sync.autoUpload": false
 }
