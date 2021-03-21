@@ -18,6 +18,9 @@ _comp_options_+=(globdots) # auto-complete hidden files
 ## Reduce esc delay
 export KEYTIMEOUT=1
 
+# to prevent nested sessions
+if [ "$TMUX" = "" ]; then tmux; fi
+
 # Functions
 cheat(){
   xdg-open "$(du -a /home/patriktrefil/Mega/Documents/Other/cheatsheets | awk '{print $2}' | fzf)"
