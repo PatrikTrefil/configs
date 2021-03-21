@@ -10,4 +10,5 @@ sleep 2 && dwmblocks & # Status bar
 mpd & # Music Player Daemon
 dunst & # Notifications
 safeeyes -e & # Break Reminder
-fusuma & # Touchpad Gestures
+# fusuma & # Touchpad Gestures
+aw-server & aw-watcher-afk & aw-watcher-window & # Time-tracker
