@@ -9,8 +9,8 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,previewClosed,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/GroupDefinitions/" value="n=GLOBAL,m=6a426eef-17cb-493e-9788-954f9de95a32"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=Fedora"/>
+      <ExtraDataItem name="GUI/GroupDefinitions/" value="n=GLOBAL,m=09ce9a56-0899-432c-9cba-4616eee48a41"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=Fedora 1"/>
       <ExtraDataItem name="GUI/LastWindowPosition" value="1924,44,2552,1392"/>
       <ExtraDataItem name="GUI/RecentFolderHD" value="/home/patriktrefil/Downloads/nswi177-disk-image-fedora-for-virtualbox"/>
       <ExtraDataItem name="GUI/RecentListHD" value="/home/patriktrefil/Downloads/nswi177-disk-image-fedora-for-virtualbox/nswi177-disk-image-fedora.vdi"/>
@@ -19,7 +19,7 @@
       <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Details"/>
     </ExtraData>
     <MachineRegistry>
-      <MachineEntry uuid="{6a426eef-17cb-493e-9788-954f9de95a32}" src="/home/patriktrefil/VirtualBox VMs/Fedora/Fedora.vbox"/>
+      <MachineEntry uuid="{09ce9a56-0899-432c-9cba-4616eee48a41}" src="/home/patriktrefil/.local/etc/virtual_box/Fedora 1/Fedora 1.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>
