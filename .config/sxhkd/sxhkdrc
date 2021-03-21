@@ -43,10 +43,10 @@ super + m
     dunstctl set-paused toggle && pkill -RTMIN+5 dwmblocks
 # generate password
 super + g
-    bw generate --number --uppercase --lowercase --special | xclip -selection clipboard
+    bw generate --number --uppercase --lowercase --special | xclip -selection clipboard && notify-send -t 3000 "Password Generated"
 # toggle vpn
 super + v
-	~/.scripts/vpn && notify-send -t 3000 "VPN Toggled" && pkill -RTMIN+3 dwmblocks
+  notify-send -t 3000 "Toggling VPN" && ~/.scripts/vpn && notify-send -t 3000 "VPN Toggled" && pkill -RTMIN+3 dwmblocks
 # toggle safeeyes
 super + b
     ~/.scripts/safeeyes-toggle && pkill -RTMIN+4 dwmblocks
@@ -64,7 +64,7 @@ super + t
     search-window "nvim $HOME/Mega/Other/Todo/todo.txt"
 # password selector
 super + p ; p
-   setsid ~/Code/dmenu-bitwarden/dmenu_bitwarden.py -n
+   setsid ~/Code/dmenu-bitwarden/dmenu_bitwarden.py -pn
 super + p ; u
    setsid ~/Code/dmenu-bitwarden/dmenu_bitwarden.py -u
 # quicknotes
