@@ -188,32 +188,49 @@ let g:vimwiki_global_ext = 0 " (don't) create temp wikis
                        "\'auto_export': 1, 'auto_diary_index': 1, 'auto_tags': 1}]
 
   let wiki_1 = {}
-  let wiki_1.path = '~/Mega/Documents/Other/vimwiki/'
-  let wiki_1.path_html = '~/Mega/Documents/Other/vimwiki_html/'
-  let wiki_1.syntax = 'default'
-  let wiki_1.ext = ".wiki"
+  let wiki_1.path = '~/Mega/Documents/Other/Notes/'
+  let wiki_1.syntax = 'markdown'
+  let wiki_1.ext = ".md"
   let wiki_1.maxhi = 1 " highlight links leading to empty pages
   let wiki_1.auto_export = 1
   let wiki_1.auto_diary_index = 1
   let wiki_1.auto_tags = 1
 
   let wiki_2 = {}
-  let wiki_2.path = '~/Mega/Documents/Other/quicknotes/'
+  let wiki_2.path = '~/Mega/Documents/Other/Notes/Personal'
   let wiki_2.syntax = 'markdown'
   let wiki_2.ext = ".md"
   let wiki_2.maxhi = 1 " highlight links leading to empty pages
+  let wiki_2.auto_export = 1
   let wiki_2.auto_diary_index = 1
   let wiki_2.auto_tags = 1
 
+
   let wiki_3 = {}
-  let wiki_3.path = '~/Mega/Documents/Other/Notes/'
+  let wiki_3.path = '~/Mega/Documents/Other/Notes/Coding'
   let wiki_3.syntax = 'markdown'
   let wiki_3.ext = ".md"
   let wiki_3.maxhi = 1 " highlight links leading to empty pages
   let wiki_3.auto_diary_index = 1
   let wiki_3.auto_tags = 1
 
-  let g:vimwiki_list = [wiki_1, wiki_2]
+  let wiki_4 = {}
+  let wiki_4.path = '~/Mega/Documents/Other/Notes/Archive'
+  let wiki_4.syntax = 'markdown'
+  let wiki_4.ext = ".md"
+  let wiki_4.maxhi = 1 " highlight links leading to empty pages
+  let wiki_4.auto_diary_index = 1
+  let wiki_4.auto_tags = 1
+
+  let wiki_5 = {}
+  let wiki_5.path = '~/Mega/Documents/Other/Notes/Quicknotes/'
+  let wiki_5.syntax = 'markdown'
+  let wiki_5.ext = ".md"
+  let wiki_5.maxhi = 1 " highlight links leading to empty pages
+  let wiki_5.auto_diary_index = 1
+  let wiki_5.auto_tags = 1
+
+  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4, wiki_5]
 " Colors for Headings and Links
 hi VimwikiHeader1 guifg=#FFB86C cterm=bold gui=bold
 hi VimwikiHeader2 guifg=#BD93F9 cterm=bold gui=bold
