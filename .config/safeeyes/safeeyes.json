@@ -127,6 +127,15 @@
         },
         {
             "name": "Have some water"
+        },
+        {
+            "name": "Smile at being alive"
+        },
+        {
+            "name": "Move your head slowly up and down"
+        },
+        {
+            "name": "Look slowly from the left all the way to the right"
         }
     ],
     "shortcut_disable_time": 0,
