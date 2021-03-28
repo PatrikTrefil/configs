@@ -145,6 +145,9 @@ noremap <silent> <C-Down> :resize -3<CR>
 let g:tex_flavor = 'latex'
 let g:user_emmet_leader_key=','
 let g:latex_pdf_viewer="zathura"
+let g:NERDSpaceDelims = 1 " Add spaces after comment delimiters by default
+" Maps C-/ to toggle comment
+map <C-_> <plug>NERDCommenterToggle
 " Activation of rainbow paratheses based on file type
 augroup rainbow_lisp
   autocmd!
