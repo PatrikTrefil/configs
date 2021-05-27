@@ -10,34 +10,34 @@ super + l
 alt + shift + i
     xrandr --output "e-DP1" --primary --mode 1920x1080 --output "DP-1" --off --output "DP-3" --off
 super + shift + r
-    ~/.scripts/dmenu-reboot
+    dmenu-reboot
 super + shift + x
-    ~/.scripts/dmenu-shutdown
+    dmenu-shutdown
 super + shift + s
-    sh ~/.scripts/dmenu-sleep
+    dmenu-sleep
 # keyboard layout toggle
-super + k
-    ~/.scripts/kb_toggle && pkill -RTMIN+1 dwmblocks
+super + space
+    kb_toggle && sleep 0.1 && pkill -RTMIN+1 dwmblocks
 
 # Other
-# screenshot
-Print
-    scrot ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png && notify-send -t 2000 "Took a screenshot"
-# screenshot of selected window
-alt + Print
-    scrot -s ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png && notify-send -t 2000 "Took a screnshot"
 # screenshot to clipboard
-ctrl + Print
-    scrot -e 'xclip -selection clipboard -t image/png -i $f' && notify-send -t 2000 "Copied screenshot to clipboard"
+Print
+    scrot /tmp/%H-%M.png -e "xclip -selection clipboard -t image/png -i $f" && notify-send -t 2000 "Copied screenshot to clipboard"
 # screenshot of selected window to clipboard
-ctrl + alt + Print
-    scrot -s -e 'xclip -selection clipboard -t image/png -i $f' && notify-send -t 2000 "Copied screenshot to clipboard"
+alt + Print
+    scrot /tmp/%H-%M.png -s -e "xclip -selection clipboard -t image/png -i $f" && notify-send -t 2000 "Copied screenshot to clipboard" 
+# screenshot of selected window to file
+super + alt + Print
+    scrot -s ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png && notify-send -t 2000 "You can find the screenshots in ~/Mega/Media/Screenshots/"
+# screenshot to file
+super + Print
+    scrot ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png && notify-send -t 2000 "You can find the screenshots in ~/Mega/Media/Screenshots/"
 # insert emoji
-super + shift + e
-    ~/.scripts/dmenu-emoji/dmenu-emoji.sh
+super + period
+    sh ~/.scripts/dmenu-emoji/dmenu-emoji.sh
 # find contact
 super + c 
-    ~/Code/dmenu-vcard/script.py
+    cd ~/Code/dmenu_vcard && pipenv run go
 # mute notifications
 super + m
     dunstctl set-paused toggle && pkill -RTMIN+5 dwmblocks
@@ -46,22 +46,27 @@ super + g
     bw generate --number --uppercase --lowercase --special | xclip -selection clipboard && notify-send -t 3000 "Password Generated"
 # toggle vpn
 super + v
-  notify-send -t 3000 "Toggling VPN" && ~/.scripts/vpn && notify-send -t 3000 "VPN Toggled" && pkill -RTMIN+3 dwmblocks
+  notify-send -t 3000 "Toggling VPN" && vpn && notify-send -t 3000 "VPN Toggled" && pkill -RTMIN+3 dwmblocks
 # toggle safeeyes
 super + b
-    ~/.scripts/safeeyes-toggle && pkill -RTMIN+4 dwmblocks
+    safeeyes-toggle && pkill -RTMIN+4 dwmblocks
 # start break
 super + alt + b
     safeeyes -t
+# search bookmarks
+super + shift + b
+    firefox_bookmarks
 # settings
 super + s
-    ~/.scripts/dmenu-settings
+    dmenu-settings
 # music
 super + a
     search-window "ncmpcpp --screen browser"
+super + shift + a
+    notify-send "Adding track" && addmusic "$(xclip -selection clipboard -o)" && notify-send "Track added" || notify-send "Something went wrong"
 # todos
 super + t
-    search-window "nvim $HOME/Mega/Other/Todo/todo.txt"
+    search-window "nvim ${HOME}/Mega/Other/Todo/todo.txt"
 # password selector
 super + p ; p
    setsid ~/Code/dmenu-bitwarden/dmenu_bitwarden.py -pn
@@ -69,20 +74,20 @@ super + p ; u
    setsid ~/Code/dmenu-bitwarden/dmenu_bitwarden.py -u
 # quicknotes
 super + q
-    search-window "quicknotes_wiki"
+    search-window quicknotes_wiki
 # abbreviations
 super + e
-    ~/.scripts/abbrev
+    abbrev
 
 #Launch apps
 super + o
-    search-window "$HOME/.scripts/search-open"
+    search-window search-open
 super + n
-    search-window "$HOME/.scripts/search-edit --gui"
+    search-window search-edit --gui
 super + shift + n
-    search-window "$HOME/.scripts/search-edit --reuse-code"
+    search-window search-edit --reuse-code
 super + u
-    search-window "search-edit --gnvim"
+    search-window search-edit --gnvim
 super + Return
     $TERMINAL
 alt + p
