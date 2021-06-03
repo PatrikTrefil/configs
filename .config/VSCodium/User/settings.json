@@ -4,7 +4,6 @@
   "window.zoomLevel": 1,
   "editor.mouseWheelZoom": true,
   "editor.renderControlCharacters": true,
-  "editor.formatOnSave": true,
   // Font size
   "editor.fontSize": 18,
   "debug.console.fontSize": 20,
@@ -76,7 +75,9 @@
     "<C-v>": false,
     "<C-x>": false,
     "<C-a>": false,
-    "<C-w>": true
+    "<C-w>": true,
+    "<C-n>": true,
+    "<C-p>": true
   },
   "keyboard.dispatch": "keyCode",
   "vim.useSystemClipboard": true,
@@ -138,5 +139,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "sync.autoDownload": false,
-  "sync.autoUpload": false
+  "sync.autoUpload": false,
+  "arduino.path": "C:\\Program Files (x86)\\Arduino",
+  "sync.gist": "58d948adf24c5a27f69353f753240f81",
 }
