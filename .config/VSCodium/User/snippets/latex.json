@@ -16,10 +16,12 @@
 		"prefix": "latex",
 		"body": [
 			"\\documentclass{article}",
-			"\\usepackage[ddmmyyyy]{datetime}",
+			"\\usepackage[ddmmyyyy]{datetime}%Set date format in title",
 			"\\usepackage{footnotebackref}   %Footnotes reference back to the original text",
 			"\\usepackage{hyperref}          %references are clickable",
-			"\\usepackage[utf8]{inputenc}",
+			"\\usepackage[utf8]{inputenc}    %Input encoding (has to match with the file's encoding)",
+      "\\usepackage[T1]{fontenc}       %Output font encoding, hyphenation of accented characters"
+      "\\usepackage[czech]{babel}      %Czech quotation marks, hyphenation"
 			"",
 			"\\author{Patrik Trefil}",
 			"\\title{$1}",
