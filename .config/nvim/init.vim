@@ -24,14 +24,14 @@ Plug 'ducbueno/vimwiki-roam' " Add Roam funcionality
 Plug 'junegunn/fzf.vim' " Fzf inside vim
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Install fzf
 " LaTeX
-Plug 'lervag/vimtex' " <Space> + ll => live preview
+Plug 'lervag/vimtex' " <Local Leader> + ll => live preview
 " Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Completion
 " Productivity
 Plug 'vim-syntastic/syntastic' " Linting
 Plug 'dbeniamine/todo.txt-vim' " To-do's
 Plug 'tpope/vim-surround' " Surround X with a character
-Plug 'scrooloose/nerdcommenter' " <Leader>c + <space> toggle comment
+Plug 'scrooloose/nerdcommenter' " Toggle comments
 Plug 'svermeulen/vim-cutlass' " Cut by pressing X, instead of d
 Plug 'Raimondi/delimitMate' " Matching brackets
 Plug 'nathanaelkane/vim-indent-guides'
