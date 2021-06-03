@@ -3,7 +3,7 @@ autokey-gtk & # Abbreviations
 blueman-applet & # Bluetooth devices
 sxhkd & # Shortcuts
 redshift & # Night-shift
-~/.scripts/wallpaper & # Desktop background
+set_wallpaper -r & # Desktop background
 xautolock -time 11 -notifier notify-send -notify 120 -locker ~/.scripts/xlock & # Autolock
 xfce4-power-manager & # Control screen brightness, power management
 sleep 2 && dwmblocks & # Status bar
@@ -11,4 +11,4 @@ mpd & # Music Player Daemon
 dunst & # Notifications
 safeeyes -e & # Break Reminder
 # fusuma & # Touchpad Gestures
-aw-server & aw-watcher-afk & aw-watcher-window & # Time-tracker
+# aw-server & aw-watcher-afk & aw-watcher-window & # Time-tracker
