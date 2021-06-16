@@ -55,7 +55,7 @@ super + alt + b
     safeeyes -t
 # search bookmarks
 super + shift + b
-    firefox_bookmarks
+    dmenu-firefox-bookmarks
 # settings
 super + s
     dmenu-settings
