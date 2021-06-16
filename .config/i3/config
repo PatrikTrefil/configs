@@ -23,7 +23,7 @@ font pango:Icons 16
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec xss-lock -- slock 
+# exec xss-lock -- slock 
 
 # Use pactl to adjust volume in PulseAudio.
 #set $refresh_i3status killall -SIGUSR1 i3status
@@ -36,7 +36,7 @@ exec xss-lock -- slock
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+n exec alacritty
+# bindsym $mod+n exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -134,7 +134,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec bash -c "[ "$(echo -e "Yes\nNo" | dmenu -i -p "Want to log out?")" = "Yes" ] && i3msg exit"
+bindsym $mod+Shift+e exec i3exit.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
