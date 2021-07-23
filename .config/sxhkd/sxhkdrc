@@ -2,13 +2,15 @@
 # button 8 is Back (in browser)
 # button 9 is Forward (in browser)
 
+alt + p
+  dmenu_run
 # System Operations
 # lock
 super + l
     setxkbmap us && pkill -RTMIN+1 dwmblocks && $LOCK
 # use internal display only
 alt + shift + i
-    xrandr --output "e-DP1" --primary --mode 1920x1080 --output "DP-1" --off --output "DP-3" --off
+    xrandr --output "eDP1" --primary --mode 1920x1200 --output "DP1" --off --output "DP3" --off
 super + shift + r
     dmenu-reboot
 super + shift + x
@@ -17,21 +19,23 @@ super + shift + s
     dmenu-sleep
 # keyboard layout toggle
 super + space
-    kb_toggle && sleep 0.1 && pkill -RTMIN+1 dwmblocks
+    kb_toggle && sleep 0.2;  pkill -RTMIN+1 dwmblocks
 
 # Other
 # screenshot to clipboard
 Print
-    scrot /tmp/%H-%M.png -e "xclip -selection clipboard -t image/png -i $f" && notify-send -t 2000 "Copied screenshot to clipboard"
-# screenshot of selected window to clipboard
+    scrot "$(mktemp --suffix '.png')" -e 'xclip -selection clipboard -t image/png -i $f' && notify-send -t 2000 "Copied screenshot to clipboard"
+# screenshot of selected window/area to clipboard
 alt + Print
-    scrot /tmp/%H-%M.png -s -e "xclip -selection clipboard -t image/png -i $f" && notify-send -t 2000 "Copied screenshot to clipboard" 
+    scrot "$(mktemp --suffix '.png')" -s -e 'xclip -selection clipboard -t image/png -i $f' && notify-send -t 2000 "Copied screenshot to clipboard" 
 # screenshot of selected window to file
 super + alt + Print
     scrot -s ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png && notify-send -t 2000 "You can find the screenshots in ~/Mega/Media/Screenshots/"
 # screenshot to file
 super + Print
     scrot ~/Mega/Media/Screenshots/%Y-%m-%d_%H-%M.png && notify-send -t 2000 "You can find the screenshots in ~/Mega/Media/Screenshots/"
+
+
 # insert emoji
 super + period
     sh ~/.scripts/dmenu-emoji/dmenu-emoji.sh
