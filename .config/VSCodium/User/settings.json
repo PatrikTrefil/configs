@@ -30,7 +30,8 @@
     "editor.tabSize": 2
   },
   "[html]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript, json]": {
     "editor.tabSize": 2
@@ -142,4 +143,5 @@
   "sync.autoUpload": false,
   "arduino.path": "C:\\Program Files (x86)\\Arduino",
   "sync.gist": "58d948adf24c5a27f69353f753240f81",
+  "security.workspace.trust.untrustedFiles": "open",
 }
