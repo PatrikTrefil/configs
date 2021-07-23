@@ -14,6 +14,7 @@ text/plain=vscodium-bin.desktop;
 text/x-tex=VSCodium.desktop;
 video/mp4=vlc.desktop;mpv.desktop;
 video/x-matroska=vlc.desktop;
+application/x-shellscript=VSCodium.desktop;
 
 [Default Applications]
 inode/directory=file.desktop
