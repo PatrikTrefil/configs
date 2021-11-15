@@ -15,6 +15,8 @@ text/x-tex=VSCodium.desktop;
 video/mp4=vlc.desktop;mpv.desktop;
 video/x-matroska=vlc.desktop;
 application/x-shellscript=VSCodium.desktop;
+audio/mpeg=vlc.desktop;
+video/x-msvideo=vlc.desktop;
 
 [Default Applications]
 inode/directory=file.desktop
@@ -45,7 +47,6 @@ x-scheme-handler/chrome=firefox.desktop
 x-scheme-handler/ftp=firefox.desktop
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
-x-scheme-handler/mailto=tutanota-desktop.desktop
 x-scheme-handler/msteams=teams.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop
