@@ -12,14 +12,10 @@ filetype plugin on
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
+Plug 'editorconfig/editorconfig-vim'
 " Writing
-Plug 'dhruvasagar/vim-table-mode' " Markdown Tables (:TableModeToggle and start typing)
-Plug 'rhysd/vim-grammarous' " :GrammarousCheck --lang={lang}
-Plug 'moorereason/vim-markdownfmt' " :call markdownfmt#Format()
 Plug 'junegunn/goyo.vim' " Zen Mode (:Goyo)
 Plug 'junegunn/limelight.vim' " See only current paragrapgh (:Limelight)(Best with Goyo)
-Plug 'vimwiki/vimwiki' " Note-manager
-Plug 'ducbueno/vimwiki-roam' " Add Roam funcionality
 " Files
 Plug 'junegunn/fzf.vim' " Fzf inside vim
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Install fzf
@@ -29,12 +25,11 @@ Plug 'lervag/vimtex' " <Local Leader> + ll => live preview
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Completion
 " Productivity
 Plug 'vim-syntastic/syntastic' " Linting
-Plug 'dbeniamine/todo.txt-vim' " To-do's
 Plug 'tpope/vim-surround' " Surround X with a character
 Plug 'scrooloose/nerdcommenter' " Toggle comments
 Plug 'svermeulen/vim-cutlass' " Cut by pressing X, instead of d
 Plug 'Raimondi/delimitMate' " Matching brackets
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'nathanaelkane/vim-indent-guides' " Indent guides
 Plug 'easymotion/vim-easymotion' " Better motions
 "" Snippets
 Plug 'SirVer/ultisnips' " Snippet engine (triggered from coc by <tab>)
@@ -44,8 +39,7 @@ Plug 'mattn/emmet-vim' " HTML Snippets Press , , (comma + comma)
 Plug 'sheerun/vim-polyglot' " Syntax highlighting
 Plug 'ap/vim-css-color' " See color previews
 Plug 'junegunn/rainbow_parentheses.vim' " Rainbow paratheses
-Plug 'dracula/vim', { 'as': 'dracula' }
-" Rice
+Plug 'dracula/vim', { 'as': 'dracula' } " Theme
 Plug 'ryanoasis/vim-devicons' " Nice icons
 Plug 'vim-airline/vim-airline' " Status Line
 " Initialize plugin system " {{{
@@ -79,7 +73,7 @@ set termguicolors " Ignore terminal colorscheme
 set list " show whitespace chars defined in listchars
 set listchars=tab:>·,trail:~,extends:>,precedes:< " eol:¬, = disables cursor in gnvim
 set updatetime=100 " write to disk after X miliseconds to save state for crashes
-
+" }}}
 " Tabs " {{{
 " http://vimcasts.org/episodes/tabs-and-spaces/ "
 set expandtab " tab to a multiple of tabstop and enables uses of spaces
@@ -179,72 +173,6 @@ let g:fzf_buffers_jump = 1
 noremap <c-l> :Snippets<CR>
 imap <c-x><c-f> <plug>(fzf-complete-path)
 " }}}
-" VimWiki "{{{
-let g:vimwiki_folding = 'custom' " Load from ftplugin
-let g:vimwiki_auto_header = 1 " create heading in new file
-let g:vimwiki_global_ext = 0 " (don't) create temp wikis
-"let g:vimwiki_ext2syntax = {}
-" Maxhi gives different colors to links that lead nowhere
-"let g:vimwiki_list = [{'path': '~/Mega/Documents/Other/vimwiki/',
-                       "\'path_html': '~/Mega/Documents/Other/vimwiki_html',
-                       "\'syntax': 'default', 'ext': '.wiki', 'maxhi': 1,
-                       "\'auto_export': 1, 'auto_diary_index': 1, 'auto_tags': 1}]
-
-  let wiki_1 = {}
-  let wiki_1.path = '~/Mega/Documents/Other/Notes/'
-  let wiki_1.syntax = 'markdown'
-  let wiki_1.ext = ".md"
-  let wiki_1.maxhi = 1 " highlight links leading to empty pages
-  let wiki_1.auto_export = 1
-  let wiki_1.auto_diary_index = 1
-  let wiki_1.auto_tags = 1
-
-  let wiki_2 = {}
-  let wiki_2.path = '~/Mega/Documents/Other/Notes/Personal'
-  let wiki_2.syntax = 'markdown'
-  let wiki_2.ext = ".md"
-  let wiki_2.maxhi = 1 " highlight links leading to empty pages
-  let wiki_2.auto_export = 1
-  let wiki_2.auto_diary_index = 1
-  let wiki_2.auto_tags = 1
-
-
-  let wiki_3 = {}
-  let wiki_3.path = '~/Mega/Documents/Other/Notes/Coding'
-  let wiki_3.syntax = 'markdown'
-  let wiki_3.ext = ".md"
-  let wiki_3.maxhi = 1 " highlight links leading to empty pages
-  let wiki_3.auto_diary_index = 1
-  let wiki_3.auto_tags = 1
-
-  let wiki_4 = {}
-  let wiki_4.path = '~/Mega/Documents/Other/Notes/Archive'
-  let wiki_4.syntax = 'markdown'
-  let wiki_4.ext = ".md"
-  let wiki_4.maxhi = 1 " highlight links leading to empty pages
-  let wiki_4.auto_diary_index = 1
-  let wiki_4.auto_tags = 1
-
-  let wiki_5 = {}
-  let wiki_5.path = '~/Mega/Documents/Other/Notes/Quicknotes/'
-  let wiki_5.syntax = 'markdown'
-  let wiki_5.ext = ".md"
-  let wiki_5.maxhi = 1 " highlight links leading to empty pages
-  let wiki_5.auto_diary_index = 1
-  let wiki_5.auto_tags = 1
-
-  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4, wiki_5]
-" Colors for Headings and Links
-hi VimwikiHeader1 guifg=#FFB86C cterm=bold gui=bold
-hi VimwikiHeader2 guifg=#BD93F9 cterm=bold gui=bold
-hi VimwikiHeader3 guifg=#F1FA8C cterm=bold gui=bold
-hi VimwikiHeader4 guifg=#50FA7B cterm=bold gui=bold
-hi VimwikiHeader5 guifg=#00FFFF cterm=bold gui=bold
-hi VimwikiHeader6 guifg=#FFFF00 cterm=bold gui=bold
-hi VimwikiLink cterm=underline ctermfg=cyan guifg=cyan gui=underline
-" Diary simplification
-command! Diary VimwikiDiaryIndex
-"}}}
 " Goyo "{{{
 let g:goyo_width = 90
 autocmd! User GoyoEnter Limelight
@@ -266,19 +194,6 @@ nnoremap XX dd
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 "}}}
-" ALE "{{{
-"let g:ale_sign_error = 'X'
-"let g:ale_sign_warning = '!'
-"let g:ale_fixers = {
-"\ 'javascript': ['eslint'],
-"\ 'typescript': ['prettier', 'tslint'],
-"\ 'vue': ['eslint'],
-"\ 'scss': ['prettier'],
-"\ 'html': ['prettier'],
-"\ 'python': ['pylint'],
-"\}
-"let g:ale_fix_on_save = 1
-"}}}
  "UltiSnips "{{{
 "let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -287,20 +202,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "let g:UltiSnipsListSnippets="<c-l>" " List snippets by presing Ctrl+l in insert mode
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/ultisnips']
 "}}}
- "Deoplete "{{{
-"let g:deoplete#enable_at_startup = 1
- "call deoplete#custom#option('sources', {
-    "\ 'Python': ['deoplete-jedi'],
-    "\})
- "disable autocompletion, cause we use deoplete for completion
-"let g:jedi#completions_enabled = 0
- "open the go-to function in split, not another buffer
-"let g:jedi#use_splits_not_buffers = "right"
- "system clipboard
- "Preserve indentation while pasting text from the OS X clipboard
- "noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
- "if hidden is not set, TextEdit might fail.
-"}}}
 " COC "{{{
 " K = documentation
 " Ctrl + space = intelisense
@@ -308,12 +209,16 @@ let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/ultisnips']
 " :Format = format
 let g:coc_global_extensions = [
   \ 'coc-snippets', 
-  \ 'coc-python', 
+  \ 'coc-pyright', 
   \ 'coc-sh', 
   \ 'coc-html', 
   \ 'coc-css', 
   \ 'coc-eslint',
   \ 'coc-prettier',
+  \ 'coc-markdownlint',
+  \ 'coc-yaml',
+  \ 'coc-toml',
+  \ 'coc-stylelint',
   \ ]
 " Load UltiSnips
 " Python linting and formatting
@@ -567,17 +472,3 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 "nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 "" Resume latest coc list
 "nnoremap <silent> <space>p  :<C-u>CocListResume<CR>"}}}}}}
-" Markdown Preview {{{
-" :call StartMDPreview()
-func! CompileMD()
-  silent !pandoc -o /tmp/preview.pdf %
-endfu
-func! PreviewMD()
-  silent !zathura /tmp/preview.pdf &
-endfu
-func! StartMDPreview()
-  call CompileMD()
-  autocmd BufWritePost *.md call CompileMD()
-  call PreviewMD()
-endfu
-" }}}
