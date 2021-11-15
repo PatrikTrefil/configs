@@ -27,4 +27,5 @@ rga-fzf() {
 cleanup() { rm -f *.dvi *.log *.aux }
 
 ## cd using fzf
-cd_fzf() { cd "$(find . -type d 2>/dev/null | fzf)" }
+# cd_fzf() { cd "$(find . -type d 2>/dev/null | fzf)" }
+cd_fzf() { cd "$(search-directory)" }
