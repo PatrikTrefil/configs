@@ -10,7 +10,7 @@ super + l
     setxkbmap us && pkill -RTMIN+1 dwmblocks && $LOCK
 # use internal display only
 alt + shift + i
-    xrandr --output "eDP1" --primary --mode 1920x1200 --output "DP1" --off --output "DP3" --off
+    xrandr --output "eDP-1" --primary --mode 1920x1200 --output "DP-1" --off --output "DP-3" --off
 super + shift + r
     dmenu-reboot
 super + shift + x
@@ -67,10 +67,10 @@ super + s
 super + a
     search-window "ncmpcpp --screen browser"
 super + shift + a
-    notify-send "Adding track" && addmusic "$(xclip -selection clipboard -o)" && notify-send "Track added" || notify-send "Something went wrong"
+    addmusic "$(xclip -selection clipboard -o)" || notify-send "Something went wrong"
 # todos
 super + t
-    search-window "nvim ${HOME}/Mega/Other/Todo/todo.txt"
+    qutebrowser "https://to-do.live.com/tasks/AQMkADAwATM0MDAAMS1kMGJjLTUzY2ItMDACLTAwCgAuAAADMoWn2mlRc0_mKPmfMxrmEAEAmFp7Ffo4_Uub7yqTOymEiAAEyVTrugAAAA==?ru=https%3A%2F%2Ftodo.microsoft.com%2Ftasks%2F"
 # password selector
 super + p ; p
    setsid ~/Code/dmenu-bitwarden/dmenu_bitwarden.py -pn
@@ -78,7 +78,7 @@ super + p ; u
    setsid ~/Code/dmenu-bitwarden/dmenu_bitwarden.py -u
 # quicknotes
 super + q
-    search-window quicknotes_wiki
+    search-window quicknotes
 # abbreviations
 super + e
     abbrev
