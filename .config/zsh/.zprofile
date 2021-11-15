@@ -4,10 +4,11 @@ export PAGER='less'
 export EDITOR='nvim'
 export GEDITOR='vscodium'
 export READER='zathura'
+export NOTES_DIR="${HOME}/Mega/Documents/Other/Notes"
 export SCRIPTS="${HOME}/.scripts/"
 export MUSIC="${HOME}/Mega/Music/"
 export LOCK="${HOME}/.scripts/xlock"
-export WALL="${HOME}/Wallpapers"
+export WALL="${HOME}/Mega/Other/Wallpapers"
 
 export TZ='Europe/Prague'
 # ZSH config
