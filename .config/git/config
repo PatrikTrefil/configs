@@ -16,3 +16,5 @@
 	unstage = reset HEAD --
 [merge]
 	ff = false
+[includeIf "gitdir:/mnt/c/Users/patri/Code/apify/"]
+	path = /mnt/c/Users/patri/Code/apify/.gitconfig
