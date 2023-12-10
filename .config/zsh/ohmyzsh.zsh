@@ -1,3 +1,6 @@
+# Path to your oh-my-zsh installation.
+# export ZSH="$HOME/.oh-my-zsh"
+
 ZSH_TMUX_AUTOSTART=false
 ZSH_TMUX_UNICODE=true
 ZSH_TMUX_CONFIG=~/.config/tmux/.tmux.conf
@@ -24,7 +27,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(safe-paste zsh-syntax-highlighting vi-mode zsh-vimode-visual fzf npm pylint pip tmux)
+plugins=(safe-paste vi-mode fzf npm pylint pip tmux)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
