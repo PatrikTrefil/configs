@@ -8,6 +8,7 @@
 	email = patrik.trefil@gmail.com
 [core]
 	excludesfile = /home/patriktrefil/.config/git/ignore
+	editor = nvim
 [alias]
 	co = checkout
 	br = branch
