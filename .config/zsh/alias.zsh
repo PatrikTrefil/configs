@@ -9,6 +9,7 @@ alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias manf='man -k . | fzf'
 alias c='vscodium'
+alias config='git --git-dir=$HOME/configs.git/ --work-tree=$HOME'
 # Shortcodes
 alias g="git"
 alias p="sudo pacman"
