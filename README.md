@@ -1,12 +1,12 @@
 # configs
 
-these are my configs, feel free to look around
+These are my configs, feel free to look around
 
-most of the config files are for GNU/Linux programs, but there are some for MacOS too.
+Most of the config files are for GNU/Linux programs, but there are some for MacOS too.
 
 ## Usage
 
-follow the instructions in [this article](https://www.atlassian.com/git/tutorials/dotfiles).
+Follow the instructions in [this article](https://www.atlassian.com/git/tutorials/dotfiles).
 To setup neovim install [vim-plug](https://github.com/junegunn/vim-plug) and run `nvim -c :PlugInstall`.
 To setup zsh install [oh-my-zsh](https://ohmyz.sh/#install).
 
