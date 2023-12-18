@@ -4,7 +4,7 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = PatrikTrefil
+	name = Patrik Trefil
 	email = patrik.trefil@gmail.com
 	signingkey = 6832BA14F043A171
 [core]
