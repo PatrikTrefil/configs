@@ -28,3 +28,5 @@ export KEYTIMEOUT=1
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+## ssh https://www.thatamazingprogrammer.com/setting-up-ssh-keys-for-github-using-wsl-and-keychain
+eval `keychain --quiet --agents ssh --eval ~/.ssh/id_rsa` 1>/dev/null

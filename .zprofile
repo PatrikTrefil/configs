@@ -71,6 +71,8 @@ export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 # FZF
 export FZF_DEFAULT_COMMAND='find .'
 export FZF_DEFAULT_OPTS='--multi --reverse --preview="([[ -f {} ]] && ([[ {} = ".*\.pdf" ]] && (pdftotext {} -)) || (bat --style=numbers --color=always {} 2>/dev/null || cat {} 2>/dev/null)) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200"'
+# gpg
+export GPG_TTY=$(tty)
 # Switch escape and caps if tty and no passwd required (linux only)
 # sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/tty.map 2>/dev/null
 # Console display manager on linux

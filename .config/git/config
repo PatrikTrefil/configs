@@ -6,6 +6,7 @@
 [user]
 	name = PatrikTrefil
 	email = patrik.trefil@gmail.com
+	signingkey = 6832BA14F043A171
 [core]
 	excludesfile = /home/patriktrefil/.config/git/ignore
 	editor = nvim
@@ -19,3 +20,7 @@
 	ff = false
 [includeIf "gitdir:/mnt/c/Users/patri/Code/apify/"]
 	path = /mnt/c/Users/patri/Code/apify/.gitconfig
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
