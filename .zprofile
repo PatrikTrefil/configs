@@ -46,7 +46,6 @@ export AUDACITY_PATH="${XDG_DATA_HOME}/audacity"
 # History files
 export HISTFILE="${XDG_DATA_HOME}/zsh/history"
 export LESSHISTFILE="${XDG_CACHE_HOME}/less/lesshst"
-export WGETRC="${XDG_CONFIG_HOME}/wget/wgetrc"
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 # Configs
 export MYVIMRC="${XDG_CONFIG_HOME}/nvim/init.vim"
