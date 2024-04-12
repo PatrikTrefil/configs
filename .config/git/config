@@ -6,10 +6,10 @@
 [user]
 	name = Patrik Trefil
 	email = patrik.trefil@gmail.com
-	signingkey = 6832BA14F043A171
 [core]
 	excludesfile = /home/patriktrefil/.config/git/ignore
 	editor = nvim
+	sshCommand = ssh.exe
 [alias]
 	co = checkout
 	br = branch
@@ -28,3 +28,12 @@
 	ui = auto
 [branch]
 	sort = -committerdate
+[gpg]
+	format = ssh
+[tag]
+	gpgSign = true
+[push]
+	gpgSign = if-asked
+[gpg "ssh"]
+	program = ssh-keygen.exe
+	defaultKeyCommand = ssh-add.exe -L
